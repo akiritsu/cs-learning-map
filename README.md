@@ -1,2 +1,2 @@
 # booklist
-A book list for programming amateurs and beginners.
+A book list for Computer Science amateurs and beginners.
