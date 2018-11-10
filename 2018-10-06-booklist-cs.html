@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>2018-10-06-booklist-cs.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: "Segoe WPC", "Segoe UI", "SFUIText-Light", "HelveticaNeue-Light", sans-serif, "Droid Sans Fallback";
+	font-size: 14px;
+	padding: 0 12px;
+	line-height: 22px;
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	color: #4080D0;
+	text-decoration: none;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+h1 code,
+h2 code,
+h3 code,
+h4 code,
+h5 code,
+h6 code {
+	font-size: inherit;
+	line-height: auto;
+}
+
+a:hover {
+	color: #4080D0;
+	text-decoration: underline;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left: 5px solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 14px;
+	line-height: 19px;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+.mac code {
+	font-size: 12px;
+	line-height: 18px;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+/** Theming */
+
+.vscode-light,
+.vscode-light pre code {
+	color: rgb(30, 30, 30);
+}
+
+.vscode-dark,
+.vscode-dark pre code {
+	color: #DDD;
+}
+
+.vscode-high-contrast,
+.vscode-high-contrast pre code {
+	color: white;
+}
+
+.vscode-light code {
+	color: #A31515;
+}
+
+.vscode-dark code {
+	color: #D7BA7D;
+}
+
+.vscode-light pre:not(.hljs),
+.vscode-light code > div {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre:not(.hljs),
+.vscode-dark code > div {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre:not(.hljs),
+.vscode-high-contrast code > div {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+.vscode-light blockquote,
+.vscode-dark blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.vscode-high-contrast blockquote {
+	background: transparent;
+	border-color: #fff;
+}
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family:  "Meiryo", "Segoe WPC", "Segoe UI", "SFUIText-Light", "HelveticaNeue-Light", sans-serif, "Droid Sans Fallback";
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+</head>
+<body>
+<p><strong>A reasoned booklist for computer science amateurs and beginners.</strong></p>
+<p>Total: 106 books.</p>
+<p>Ordering of class: EX -&gt; A -&gt; B -&gt; C -&gt; D -&gt; E, “+” and “++” means probably useful in some specific areas.</p>
+<h2 id="artificial-inteilligence-11">Artificial Inteilligence [11]</h2>
+<p><strong>Artificial Intelligence - A Modern Approach 3rd Edition</strong> , Class: A , Beginner-friendly</p>
+<ul>
+<li>Part I: Artificial Intelligence - Sets the stage for the following sections by viewing AI systems as intelligent agents that can decide what actions to take and when to take them.</li>
+<li>Part II: Problem-solving - Focuses on methods for deciding what action to take when needing to think several steps ahead such as playing a game of chess.</li>
+<li>Part III: Knowledge, reasoning, and planning - Discusses ways to represent knowledge about the intelligent agents' environment and how to reason logically with that knowledge.</li>
+<li>Part IV: Uncertain knowledge and reasoning - This section is analogous to Parts III, but deals with reasoning and decision-making in the presence of uncertainty in the environment.</li>
+<li>Part V: Learning - Describes ways for generating knowledge required by the decision-making components and introduces a new component: the artificial neural network</li>
+<li>Part VI: Communicating, perceiving, and acting - Concentrates on ways an intelligent agent can perceive its environment whether by touch or vision.</li>
+<li>Part VII: Conclusions - Considers the past and future of AI by discussing what AI really is and why it has succeeded to some degree. Also, the views of those philosophers who believe that AI can never succeed are given discussion.</li>
+</ul>
+<p><strong>Artificial Intelligence - Neural Networks Algorithms, Applications, And Programming Techniques</strong> , Class: C</p>
+<ul>
+<li>Adaline and Madaline</li>
+<li>Backpropagation</li>
+<li>The BAM and the Hopfield Memory</li>
+<li>Simulated Annealing: Networks discussed include the Boltzmann completion and input-output networks</li>
+<li>The Counterpropagation Network</li>
+<li>Self-Organizing Maps: includes the Kohonen topology-preserving map and the feature-map classifier</li>
+<li>Adaptive Resonance Theory: Networks discussed include both ART1 and ART2</li>
+<li>Spatiotemporal Pattern Classification: discusses Hecht-Nielsen's spatiotemporal network</li>
+<li>The Neocognitron</li>
+</ul>
+<p><strong>Foundations of Data Science</strong> , Class: A , Beginner-friendly</p>
+<ul>
+<li>High-Dimensional Space, Best-Fit Subspaces and Singular Value Decomposition (SVD), Random Graphs, Random Walks and Markov Chains, Learning and VC-dimension, Algorithms for Massive Data Problems, Clustering, Topic Models, Hidden Markov Process, Graphical Models, and Belief Propagation, Rankings, Hare System for Voting, Compressed Sensing and Space Vectors.</li>
+</ul>
+<p><strong>Intelligent Systems for Engineers and Scientists 2rd Edition</strong> - Adrian A. Hopgood , Class: C</p>
+<p><strong>Machine Learning A Probabilistic Perspective</strong> , Class: B+</p>
+<p><strong>Paradigms of Artificial Intelligence Programming - Case Studies in Common LISP</strong> , Class: B+ , For Beginers</p>
+<ul>
+<li>Introduction to Common Lisp, The General Problem Solver, ELIZA: Dialog with a Machine, Building Software Tools, STUDENT: Solving Algebra Word Problems, Symbolic Mathematics: A Simplification Program, Efficiency Issues, Low Level Efficiency Issues, Logic Programming, Compiling Logic Programs , Object-Oriented Programming, Knowledge Representation and Reasoning, Advanced AI Programs, Symbolic Mathematics with Canonical Form, Expert Systems, Line-Diagram Labeling by Constraint Satisfaction, Search and the Game of Othello, Introduction to Natural Language, Unification Grammars, A Grammar of English</li>
+</ul>
+<p><strong>Pattern Recognition and Machine Learning</strong> , Class: A</p>
+<p><strong>Prolog and Natural Language Analysis</strong> , Class: B</p>
+<p><strong>Reinforcement Learning, An Introduction</strong> , Class: B+ , Beginner-friendly</p>
+<p><strong>The Elemtes of Statistical Learning</strong> , Class: B+</p>
+<p><strong>The Handbook of Applied Expert Systems</strong> - Jay Liebowitz , Class: C</p>
+<h2 id="automated-theorem-proof-9">Automated Theorem Proof [9]</h2>
+<p><strong>Automated Theorem Proving</strong> , Class: D</p>
+<p><strong>Certified Programming with Dependent Types</strong> , Class: A</p>
+<p><strong>Interactive Theorem Proving and Program Development Coq’Art: The Calculus of Inductive Constructions</strong> , Class: A++ , Beginner-friendly</p>
+<ul>
+<li>Aim to give a practical understanding of the Coq system and its underlying theory, the Calculus of Inductive Constructions.</li>
+</ul>
+<p><strong>Little Engines of Proof</strong> , Class: D</p>
+<p><strong>Mathematical Components</strong> , Class: A</p>
+<p><strong>Proof Trick Small Inversions</strong> , Class: D</p>
+<p><strong>Software Foundations</strong> , Class: EX , Beginner-friendly</p>
+<ul>
+<li>Volume 1 Logical Foundations: serves as the entry-point to the series. It covers functional programming, basic concepts of logic, computer-assisted theorem proving,and Coq.</li>
+<li>Volume 2 Programming Language Foundations: surveys the theory of programming languages, including operational semantics, Hoare logic, and static type systems.</li>
+<li>Volume 3 Verified Functional Algorithms: shows how a variety of fundamental data structures can be mechanically verified.</li>
+<li>Volume 4 QuickChick: Property-Based Testing in Coq introduces tools and techniques for combining randomized property-based testing with formal specification and proof in the Coq ecosystem.</li>
+</ul>
+<p><strong>Structural Proof Theory</strong> , Class: B+</p>
+<p><strong>The Little Prover</strong> , Class: E</p>
+<ul>
+<li>Write a MiniKaren interpreter with Scheme.</li>
+</ul>
+<h2 id="mathematics-17">Mathematics [17]</h2>
+<p><strong>A Course In Mathematical Logic</strong> , Class: A+ , Beginner-friendly</p>
+<ul>
+<li>Chapters 1-3. These together constitute an elementary introduction
+to mathematical logic up to the Godel-Henkin completeness theorem.</li>
+<li>Chapter 4, Boolean Algebra. Chapter 5, model theory.</li>
+<li>Chapter 6 and 8 self-contained course on recursion theory.</li>
+<li>Chapter 7, an account of the limitative results about formal mathematical systems.</li>
+<li>Chapter 9, an introduction to first-order intuitionistic logic.</li>
+<li>Chapter 10, an axiomatic investigation of Zermelo-Fraenkel set theory.</li>
+<li>Chapter 11, an introduction to nonstandard analysis, which is an
+important method of applying model theory to mathematics.</li>
+</ul>
+<p><strong>A Mathematical Introduction to Logic, 2nd Edition</strong> , Class: B , Beginner-friendly</p>
+<ul>
+<li>Textbook for learning Mathematical Logic including propositional logic, first-order logic, Entscheidungsproblem and second-order logic.</li>
+</ul>
+<p><strong>Boolean Functions Theory, Algorithms, and Applications</strong> , Class: C+</p>
+<ul>
+<li>Fundamental concepts and applications, Boolean equations, Prime implicants and minimal DNFs, Duality theory.</li>
+<li>Special Classes: Quadratic functions, Horn functions, Orthogonal forms and shellability, Regular functions, Threshold functions, Read-once functions, Characterizations of special classes by functional equations.</li>
+<li>Generalizations: Partially defined Boolean functions, Pseudo-Boolean functions</li>
+</ul>
+<p><strong>Category Theory</strong> , Class: B++ , Beginner-friendly</p>
+<p><strong>Categories for the Working Mathematician, Saunders Mac Lane</strong> , Class: A++</p>
+<p><strong>Conceptual Mathematics, A First Introduction To Categories 2nd Ed</strong> , Class: B+</p>
+<p><strong>Discrete Mathematics and Its Applications</strong> , Class: B+ , Beginner-friendly</p>
+<p><strong>First-order logic</strong> , Class: E , Beginner-friendly</p>
+<p><strong>General Topology, John L. Kelley</strong> , Class: C , Beginner-friendly</p>
+<p><strong>Introduction to Axiomatic set theory, Takeuti G. Zaring W.</strong> , Class: B , Beginner-friendly</p>
+<p><strong>Introduction to Lattices and Order</strong> , Class: E , Beginner-friendly</p>
+<p><strong>Introduction to Linear Algebra</strong> , Class: C+ , Beginner-friendly</p>
+<p><strong>Logic for Applications 2nd Ed</strong> , Class: A , Beginner-friendly</p>
+<ul>
+<li>Propositional Logic, Predicate Logic, Prolog, Modal Logic, Intuitionistic Logic, Elements of Set Theory.</li>
+</ul>
+<p><strong>Mathematical Logic, Ebbinghaus</strong> , Class: C , Beginner-friendly</p>
+<ul>
+<li>Syntax and Semantics of First-Order Languages, A Sequent Calculus, The Completeness Theorem, The Lowenheim-Skolem Therem, The Compactness Theorem, The Scope of First-Order Logic</li>
+</ul>
+<p><strong>Probability theory and examples 4th Edtion</strong> , Class: C , Beginner-friendly</p>
+<p><strong>Proof Theory, Gaisi Takeuti, 2nd Ed</strong> , Class: B</p>
+<ul>
+<li>In Chapter 1, I have added Rasiowa-Sikorski's Completeness Theorem
+for intuitionistic predicate calculus using Heyting algebras. The
+relationship between Kripke semantics and Heyung valued models is
+discussed In the author's opinion, the present form Of the
+Completeness theorems for intuitiomsUc predicate calculus is much
+weaker than the counterpart for classical logic. The author believes
+that the investigation Of stronger completeness theorems for
+intuitionistic logic is a very attractive new area Of investigation.</li>
+<li>In Chapter 2, Wamer's theory on the Hardy class, Kirby-Paris' work
+on Goodstein sequences,Ketonen-Solovay-Quinsey's result on
+Paris-Harrington's theorem and weak form Of Friedman's work on
+Kruskal's theorem are discussed as applications Of Gentzen's
+consistency-proof</li>
+<li>In Chapter 4, I have made the material more readable and added a
+proof theoretic form of Borel determinacy. It is an interesting open
+problem to prove Borel determinacy by means Of cut elimination.</li>
+<li>In Chapter 5, I have simplified the accessibility proof of ordinal
+diagrams and included Arai's improvement Of my consistency-proof and
+cut elimination theorem using ordinal diagrams The theory Of
+quasi-ordinal diagrams are developed as a generalization Of ordinal
+diagrams</li>
+</ul>
+<p><strong>Recursion Theory for Metamathematics, Raymond M. Smullyan</strong> , Class: B</p>
+<ul>
+<li>Recursive Enumerability and Recursivity, Undecidability and Recursive Inseparability, Indexing,
+Generative Sets and Creative Systems, Double Generativity and Complete Effective
+Inseparability, Universal and Doubly Universal Systems, Shepherdson Revisited, Recursion Theorems, Symmetric and Double Recursion Theorems, Productivity and Double Productivity, Uniform Reducibility, Pseudo-Uniform Reducibility, Some Feeble Partial Functions, Uniform Godelization.</li>
+</ul>
+<h2 id="operating-system-4">Operating System [4]</h2>
+<p><strong>Computer Systems A Programmers Perspective 3rd Global Edition</strong> , Class: EX , Beginner-friendly</p>
+<ul>
+<li>Chapter 1: A Tour of Computer Systems.</li>
+<li>Chapter 2: Representing and Manipulating Information.</li>
+<li>Chapter 3: Machine-Level Representation of Programs.</li>
+<li>Chapter 4: Processor Architecture.</li>
+<li>Chapter 5: Optimizing Program Performance.</li>
+<li>Chapter 6: The Memory Hierarchy.</li>
+<li>Chapter 7: Linking.</li>
+<li>Chapter 8: Exceptional Control Flow.</li>
+<li>Chapter 9: Virtual Memory.</li>
+<li>Chapter 10: System-Level I/O.</li>
+<li>Chapter 11: Network Programming.</li>
+<li>Chapter 12: Concurrent Programming.</li>
+</ul>
+<p><strong>Modern Operating Systems 4th Edition</strong> , Class: B++ , Beginner-friendly</p>
+<p><strong>Operating System Concepts 7th Edition</strong> , Class: B , Beginner-friendly</p>
+<p><strong>Understanding The Linux Kernel.chm</strong> , Class: E</p>
+<h2 id="program-analysis-and-verification-2">Program Analysis and Verification [2]</h2>
+<p><strong>Principle of Model Checking</strong> , Class: A</p>
+<p><strong>Principles of Program Analysis</strong> , Class: A , Beginner-friendly</p>
+<ul>
+<li>Data Flow Analysis, Contraint Based Analysis, Abstract Interpretation, Type and Effect Systems, Worklist Algorithm, Iterating in Reverse Postorder, Interating Through Strong Components.</li>
+</ul>
+<h2 id="programming-and-languages-19">Programming and Languages [19]</h2>
+<p><strong>A Little Java, A Few Patterns</strong> , Class: C</p>
+<p><strong>An Introduction To Programming In Emacs Lisp, 2nd Edition</strong> , Class: D , Beginner-friendly</p>
+<ul>
+<li>Textbook for learning Elisp.</li>
+</ul>
+<p><strong>Automate the Boring Stuff with Python</strong> , Class: E++ , Beginner-friendly</p>
+<ul>
+<li>Python Basics, Regular Expressions, File Manipulating, Document Processing, Image Processing, Mail Processing.</li>
+</ul>
+<p><strong>Functional Grammar In Prolog</strong> , Class: E</p>
+<ul>
+<li>Gives a detailed description of a computer program called ProfGlot,
+written in Prolog and using the theory of Functional Grammar in the version
+described in Dik (1989f).</li>
+</ul>
+<p><strong>How To Design Programs</strong> , Class: B , Beginner-friendly</p>
+<p><strong>Logic, Programming and Prolog</strong> , Class: D , Beginner-friendly</p>
+<ul>
+<li>Textbook for learning Prolog.</li>
+</ul>
+<p><strong>Object-Oriented Programming in Common LISP - A Programmers Guide to Clos</strong> , Class: E</p>
+<p><strong>On Lisp</strong> , Class: C</p>
+<ul>
+<li>Advanced Common Lisp techniques: Functions， Macros, Continuations, Prolog, Object-Oriented Lisp.</li>
+</ul>
+<p><strong>Practical Common Lisp</strong> , Class: C , Beginner-friendly</p>
+<ul>
+<li>Textbook Beginner-friendly： design programs with Common Lisp.</li>
+</ul>
+<p><strong>Programming in IDRIS , A Tutorial</strong> , Class: A+ , Beginner-friendly</p>
+<ul>
+<li>A quick tutorial for Idris beginners.</li>
+</ul>
+<p><strong>Programming Elixir 1.3</strong> , Class: B , Beginner-friendly</p>
+<ul>
+<li>Textbook for learning Elixir and some advanced topics: Working with Multiple Processes, Macros and Code Evaluation, Linking Modules: Behaviours and Use, Protocols—Polymorphic Functions.</li>
+</ul>
+<p><strong>Real World OCaml</strong> , Class: C , Beginner-friendly</p>
+<ul>
+<li>Textbook Beginner-friendly： design programs with OCaml.</li>
+</ul>
+<p><strong>Real World Haskell</strong> , Class: C</p>
+<ul>
+<li>Textbook for learning Haskell.</li>
+</ul>
+<p><strong>Rust Essentials</strong> , Class: B , Beginner-friendly</p>
+<ul>
+<li>Textbook for learning Rust: Basic data structures and types, Functions and Control Structures, Structuring Data and Matching Patterns, Generalizing Code with Higher-order Functions and Parametrization, the
+functional and object-oriented features of Rust, Pointers and Memory Safety, Organizing Code and Macros, Concurrency and Parallelism, Programming at the Boundaries.</li>
+</ul>
+<ul>
+<li>Textbook Beginner-friendly： design programs with Scheme.</li>
+</ul>
+<p><strong>The Art of Prolog 2nd Edition</strong> , Class: D</p>
+<p><strong>The Little Schemer 4th Edition</strong> , Class: C+ , Beginner-friendly</p>
+<ul>
+<li>Textbook Beginner-friendly： design programs with Scheme.</li>
+</ul>
+<p><strong>The Reasoned Schemer</strong> , Class: C</p>
+<ul>
+<li>An implementation for a logic programming interpreter.</li>
+</ul>
+<p><strong>The Scheme Programming Language 4th Edition</strong> , Class: E</p>
+<ul>
+<li>Scheme reference book.</li>
+</ul>
+<p><strong>The Seasoned Schemer</strong> , Class: C , Beginner-friendly</p>
+<ul>
+<li>The squel of The Little Schemer.</li>
+</ul>
+<h2 id="theoretical-computer-science-43">Theoretical Computer Science [43]</h2>
+<p><strong>Algorithms 4th Edition</strong> , Class: A , Beginner-friendly</p>
+<ul>
+<li>Data Abstraction, Bags, Queues, Stacks, Analysis of Algorithms.</li>
+<li>Algorithm for Sorting, Searching, Graphs and Strings.</li>
+</ul>
+<p><strong>An Introduction to Formal Languages and Automata 3rd Edition</strong> , Class: B+</p>
+<p><strong>An Introduction to the pi-Calculus</strong> , Class: C , Beginner-friendly</p>
+<p><strong>Basic Category Theory for Computer Scientists</strong> , Class: C , Beginner-friendly</p>
+<p><strong>Compilers, Principles, Techniques, and Tools, 2nd Edition</strong> , Class: C</p>
+<ul>
+<li>Compiler Structure</li>
+<li>Lexical Analysis (Including Regular Expressions And Finite Automata)</li>
+<li>Syntax Analysis (Including Context-Free Grammars, Ll Parsers, Bottom-Up Parsers, And Lr Parsers)</li>
+<li>Syntax-Directed Translation</li>
+<li>Type Checking (Including Type Conversions And Polymorphism)</li>
+<li>Run-Time Environment (Including Parameter Passing, Symbol Tables And Register Allocation)</li>
+<li>Code Generation (Including Intermediate Code Generation)</li>
+<li>Code Optimization</li>
+<li>Directed Translation</li>
+<li>New Data Flow Analyses</li>
+<li>Parallel Machines</li>
+<li>Garbage Collection</li>
+</ul>
+<p><strong>Compiling With Continuations</strong> , Class: D+</p>
+<p><strong>COMPUTABILITY An introduction to recursive function theory</strong> , Class: D , Beginner-friendly</p>
+<p><strong>Concepts Of Programming Languages, 11th Ed</strong> , Class: EX , Beginner-friendly</p>
+<ul>
+<li>
+<p>Chapter 1 begins with a rationale for studying programming
+languages. It then discusses the criteria used for evaluating
+programming languages and language constructs. The primary influences
+on language design, common design trade-offs, and the basic approaches
+to implementation are also examined.</p>
+</li>
+<li>
+<p>Chapter 2 outlines the evolution of the languages that are discussed
+in this book. It provides the background necessary to understanding
+the practical and theoretical basis for contemporary language
+design. It also motivates further study of language design and
+evaluation.</p>
+</li>
+<li>
+<p>Chapter 3 describes the primary formal method for describing the syntax
+of programming language—BNF. This is followed by a description of attribute
+grammars, which describe both the syntax and static semantics of languages.
+The difficult task of semantic description is then explored, including brief
+introductions to the three most common methods: operational, denotational,
+and axiomatic semantics.</p>
+</li>
+<li>
+<p>Chapter 4 introduces lexical and syntax analysis. This chapter is targeted to
+those Computer Science departments that no longer require a compiler design
+course in their curricula.</p>
+</li>
+<li>
+<p>Chapters 5 through 14 describe in detail the design issues for the
+primary constructs of programming languages. In each case, the design
+choices for several example languages are presented and
+evaluated. Specifically, Chapter 5 covers the many characteristics of
+variables, Chapter 6 covers data types, and Chapter 7 explains
+expressions and assignment statements. Chapter 8 describes control
+statements, and Chapters 9 and 10 discuss subprograms and their
+implementation. Chapter 11 examines data abstraction
+facilities. Chapter 12 provides an in-depth discussion of language
+features that support object-oriented programming (inheritance and
+dynamic method binding), Chapter 13 discusses concurrent program
+units, and Chapter 14 is about exception handling, along with a brief
+discussion of event handling.</p>
+</li>
+<li>
+<p>Chapters 15 and 16 describe two of the most important alternative
+programming paradigms: functional programming and logic programming.
+However, some of the data structures and control constructs of
+functional programming languages are discussed in Chapters 6
+and 8. Chapter 15 presents an introduction to Scheme, including
+descriptions of some of its primitive functions, special forms, and
+functional forms, as well as some examples of simple functions written
+in Scheme. Brief introductions to ML, Haskell, and F# are given to
+illustrate some different directions in functional language
+design. Chapter 16 introduces logic programming and the logic
+programming language, Prolog.</p>
+</li>
+</ul>
+<p><strong>Concepts, Techniques and Models of Computer Programming</strong> , Class: EX</p>
+<ul>
+<li>Introduction to Programming Concepts</li>
+<li>Declarative Computation Model</li>
+<li>Declarative Programming Techniques</li>
+<li>Declarative Concurrency</li>
+<li>Message-Passing Concurrency</li>
+<li>Explicit State</li>
+<li>Object-Oriented Programming</li>
+<li>Shared-State Concurrency</li>
+<li>Relational Programming</li>
+<li>Graphical User Interface Programming</li>
+<li>Distributed Programming</li>
+<li>Constraint Programming</li>
+<li>Language Semantics</li>
+</ul>
+<p><strong>Concrete Mathematics 2rd Edition</strong> , Class: A+ , Beginner-friendly</p>
+<ul>
+<li>The major topics treated in this book include sums, recurrences,
+elementary number theory, binomial coefficients, generating
+functions, discrete probability, and asymptotic methods. The emphasis
+is on manipulative technique rather than on existence theorems or
+combinatorial reasoning; the goal is for each reader to become as
+familiar with discrete operations (like the greatest-integer function
+and infinite summation) as a student of calculus is familiar with
+continuous operations (like the absolute-value function and infinite
+integration).</li>
+</ul>
+<p><strong>Concrete Semantics</strong> , Class: A</p>
+<p><strong>Essentials of Programming Languages</strong> , Class: B+ , Beginner-friendly</p>
+<ul>
+<li>EOPL Surveys the principles of programming languages from an operational perspective.It Starts with an interpreter in Scheme for a simple functional core language similar to the lambda calculus and then systematically adds constructs.</li>
+</ul>
+<p><strong>Foundations for Programming Languages, John.C..Mitchell</strong> , Class: EX , Beginner-friendly</p>
+<ul>
+<li>Written for advanced undergraduate and beginning graduate students, Foundations for Programming Languages uses a series of typed lambda calculi to study the axiomatic, operational, and denotational semantics of sequential programming languages. Later chapters are devoted to progressively more sophisticated type systems. Compared to other texts on the subject, Foundations for Programming Languages is distinguished primarily by its inclusion of material on universal algebra and algebraic data types, imperative languages and Floyd-Hoare logic, and advanced chapters on polymorphism and modules, subtyping and object-oriented concepts, and type inference.</li>
+</ul>
+<p><strong>Formal Reasionning About Programs</strong> , Class B+</p>
+<p><strong>Foundations of Computer Science, C Edition</strong> , Class: C</p>
+<p><strong>Hacker's Delight 2nd Edition</strong> , Class: D</p>
+<p><strong>Handbook of Process Algebra</strong> , Class: D</p>
+<ul>
+<li>Labelled transition systems and process graphs, Labelled transition systems, Process graphs, Embedding labelled transition systems in G, Equivalences relations and preorders on labelled transition systems, Initial nondeterminism, Trace semantics, trace semantics, Failures semantics, Failure trace semantics, Ready trace semantics, Readiness semantics and possible-futures semantics, Simulation semantics, Ready simulation semantics, Reactive versus generative testing scenarios, 2-nested simulation semantics, Bisimulation semantics, Tree semantics, Possible worlds semantics, Deterministic and saturated processes, Complete axiomatizations, Criteria for selecting a semantics for particular applications, Distinguishing deadlock and successful termination</li>
+</ul>
+<p><strong>Homotopy Type Theory</strong> , Class: A</p>
+<p><strong>Introduction to Algorithms</strong> , Class: C</p>
+<ul>
+<li>Sorting, Order Statistics, Dynamic Programming, Greedy Algorithms, Amortized Analysis,</li>
+<li>Hash Table, Binary Search Trees, Red-Black Trees, B-Trees, Fibonacci Heaps, Van Emde Boas Trees, Data Structure For Disjoint Sets</li>
+<li>Graph Algorithms, Minimum Spanning Trees, Single-Source Shortest Path, All-Pairs Shortest Paths, Maximum Flow</li>
+<li>Nultithreaded Algorithms, Matrix Operations, Linear Programming, Number-Theoretic Algorithms, String Matching, Computational Geometry, Np-Completeness, Approximation Algorithms</li>
+</ul>
+<p><strong>Introduction To Automata Theory Languages, and Computation</strong> , Class: D , Beginner-Beginner-friendly</p>
+<p><strong>Introduction to Languages and The Theory of Computation 4th Edition</strong> , Class: C</p>
+<p><strong>Introduction to Process Algreba</strong> , Class: B++ , Beginner-friendly</p>
+<ul>
+<li>Algebra of Communicating Process, Recursion, Abstraction, Protocal Verifications.</li>
+</ul>
+<p><strong>Lambda-Calculus and Combinators, an Introduction</strong> , Class: A</p>
+<p>λ-calculus, Combinatory logic, Representing the computable functions,
+The undecidability theorem 63, The formal theories λβ and CLw,
+Extensionality in λ-calculus, Extensionality in combinatory logic,
+Simple typing, Church-style, Simple typing, Curry-style in CL, Simple
+typing, Curry-style in λ, Generalizations of typing, Models of CL,
+Models of λ-calculus, Scott’s D ∞ and other models.</p>
+<p><strong>Language Implementation Patterns</strong> , Class: B++ , Beginner-friendly</p>
+<ul>
+<li>Getting Started with Parsing: We’ll start out by looking at the
+overall architecture of language applications and then jump into the
+key language recognition (parsing) patterns.</li>
+<li>Analyzing Languages: To analyze DSLs and programming languages,
+we’ll use parsers to build trees that represent language constructs
+in memory. By walking those trees, we can track and identify the
+various symbols (such as variables and functions) in the input. We can
+also compute expression result-type information (such as int and float
+). The patterns in this part of the book explain how to check whether
+an input stream makes sense.</li>
+<li>Building Interpreters: This part has four different interpreter
+patterns. The interpreters vary in terms of implementation difficulty
+and run-time efficiency.</li>
+<li>Translating and Generating Languages: In the final part, we will
+learn how to translate one language to another and how to generate
+text using the StringTemplate template engine. In the final chapter,
+we’ll lay out the architecture of some interesting language
+applications to get you started building languages on your own.</li>
+</ul>
+<p><strong>Lectures on the Curry-Howard isomorphism-Elsevier Science</strong> , Class: A , Beginner-friendly</p>
+<p><strong>Let Over Lambda</strong> , Class: A+</p>
+<ul>
+<li>A book about programming macros in lisp. Unlike most programming
+books that only give them a cursory overview, this book is a series of
+tutorials and examples designed to get you programming sophisticated
+macros as efficiently and quickly as possible. Mastering macros is the
+final step to graduating from an intermediate lisp programmer to a
+lisp professional.</li>
+</ul>
+<p><strong>LISP In Small Pieces</strong> , Class: B++</p>
+<ul>
+<li>A book full of Scheme interpreters and compilers. This book is
+organized into two parts. The first takes off from the implementation
+of a naive Lisp interpreter and progresses toward the semantics of
+Scheme. The second part of the book goes in the other
+direction. Starting from denotational semantics and searching
+for efficiency, we'll broach the topic of fast interpretation (by
+pretreating static parts), and then we'll implement that
+preconditioning (by precompilation) for a byte-code compiler.</li>
+</ul>
+<p><strong>Logic in Computer Science, Modelling and Reasoning about Systems</strong> , Class: EX , Beginner-friendly</p>
+<ul>
+<li>Propositional Logic, Predicate Logic, Verification By Model Checking, Program Verification, Modal Logics And Agents, Binary Decision Diagram.</li>
+</ul>
+<p><strong>Logic Programming and Program Synthesis</strong> , Class: E</p>
+<p><strong>Mathematics for Computer Science 2013</strong> , Class: B++</p>
+<ul>
+<li>
+<p>Proofs: What is a Proof, The Well Ordering Principle, Mathematical
+Data Types, Logical Formulas, Induction, Recursive Data Types,
+Infinite Sets</p>
+</li>
+<li>
+<p>Structures: Number Theory, Directed graphs &amp; Partial Orders,
+Communication Networks, Simple Graphs, Planner Graphs,</p>
+</li>
+<li>
+<p>Counting:Sums and Asymptotics, Cardinality Rules, Generating
+Functions Conditional Probability, Random Variables , Deviation from
+the Mean, Random Walks</p>
+</li>
+</ul>
+<p><strong>Parsing techniques - a practical guide</strong> , Class: B</p>
+<p><strong>Practical Foundations for Programming Languages 2nd Edition</strong> , Class: D</p>
+<ul>
+<li>Types are the central organizing principle of the theory of
+programming languages. Language features are manifestations of type
+structure. The syntax of a language is governed by the constructs that
+define its types, and its semantics is determined by the interactions
+among those constructs. The soundness of a language design—the
+absence of ill-defined programs—follows naturally.</li>
+<li>The purpose of this book is to explain this remark. A variety of
+programming language features are analyzed in the unifying framework
+of type theory. A language feature is defined by its statics, the
+rules governing the use of the feature in a program, and its dynamics,
+the rules defining how programs using this feature are to be
+executed. The concept of safety emerges as the coherence of the
+statics and the dynamics of a language.</li>
+</ul>
+<p><strong>Programming Languages and Lambda Calculus</strong> , Class: D</p>
+<p><strong>Programming Languages Application and Interpretation</strong> , Class: D</p>
+<ul>
+<li>Write interpreters with Racket.</li>
+</ul>
+<p><strong>Structure and Interpretation of Computer Programs</strong> , Class: B , Beginner-friendly</p>
+<ul>
+<li>A textbook aiming to teach the principles of computer programming, such as abstraction in programming, metalinguistic abstraction, recursion, interpreters, and modular programming.</li>
+</ul>
+<p><strong>The Art of the Metaobject Protocol</strong> , Class: E</p>
+<p><strong>The Pi-Calculus A Theory of Mobile Processes</strong>, Class: B+</p>
+<ul>
+<li>Syntax of the Pi-calculus, Properties of the Transition System, Behavior Equivalence, Variations of the Pi-Calculus, Typed Pi-Calculus, Reasoning about Process Using Types</li>
+</ul>
+<p><strong>Programming Languages and Lambda Calculi</strong> , Class: C</p>
+<p><strong>The Art of Computer Programming</strong> , Class: A++</p>
+<ul>
+<li>Chapter 1 – Basic concepts. Algorithms, Mathematical, Preliminaries, MMIX, Some Fundamental Programming Techniques.</li>
+<li>Chapter 2 – Information Structures. Linear Lists, Trees, Multilinked Structures, Dynamic Storage,Allocation, History and Bibliography.</li>
+<li>Chapter 3 – Random Numbers. Generating Uniform Random Numbers, Statistical Tests, Other Types of Random Quantities, What Is a Random Sequence?</li>
+<li>Chapter 4 – Arithmetic. Positional Number Systems, Floating Point Arithmetic, Multiple Precision Arithmetic, Radix Conversion, Rational Arithmetic, Polynomial Arithmetic, Manipulation of Power Series.</li>
+<li>Chapter 5 – Sorting. Combinatorial Properties of Permutations, Internal sorting, Optimum Sorting, External Sorting.</li>
+<li>Chapter 6 – Searching. Sequential Searching, Searching by Comparison of Keys, Digital Searching, Hashing, Retrieval on Secondary Keys.</li>
+<li>Chapter 7 – Combinatorial Searching. Boolean Basics, Binary Decision Diagrams, Generating All Possibilities, Shortest paths, Graph algorithms, Network algorithms, Independence ,theory, Discrete dynamic programming, Branch-and-bound techniques, Herculean tasks (aka NP-hard problems), Near-optimization.</li>
+<li>Chapter 8 – Recursion</li>
+<li>Chapter 9 – Lexical scanning</li>
+<li>Chapter 10 – Parsing techniques</li>
+<li>Chapter X - The Theory of Context-free Languages</li>
+<li>Chapter Y - Compiler Techniques</li>
+</ul>
+<p><strong>The Lambda Calculus, It's syntax and Semantics</strong> , Class: A+</p>
+<ul>
+<li>Textbook covers almost all part of Lambda Calculus.</li>
+</ul>
+<p><strong>Theory of Formal Systems</strong> , Class: A</p>
+<p><strong>Type Theory and Functional Programming</strong> , Class: A+</p>
+<ul>
+<li>The first three chapters survey the three fields upon which type theory depends: logic, the λ-calculus and functional programming and constructive mathematics. The surveys are short, establishing terminology, notation and a general context for the discussion; pointers to the relevant literature and in particular to more detailed introductions are provided. In the second chapter we discuss some issues in the λ-calculus and functional programming which suggest analogous questions in type theory.</li>
+<li>The fourth chapter forms the focus of the book. We give the formal system for type theory, developing examples of both programs and proofs as we go along. These tend to be short, illustrating the construct just introduced – chapter 6 contains many more examples.</li>
+<li>The system of type theory is complex, and in chapter which follows we explore a number of different aspects of the theory. We prove certain results about it (rather than using it) including the important facts that programs are terminating and that evaluation is deterministic. Other topics examined include the variety of equality relations in the system, the addition of types (or ‘universes’) of types and some more technical points.</li>
+<li>Much of our understanding of a complex formal system must derive from out using it. Chapter six covers a variety of examples and larger case studies. From the functional programming point of view, we choose to stress the differences between the system and more traditional languages. After a lengthy discussion of recursion, we look at the impact of the quantified types, especially in the light of the universes added above. We also take the opportunity to demonstrate how programs can be extracted from constructive proofs, and one way that imperative programs can be seen as arising. We conclude with a survey of examples in the relevant literature.</li>
+<li>As an aside it is worth saying that for any formal system, we can really only understand its precise details after attempting to implement it. The combination of symbolic and natural language used by mathematicians is surprisingly suggestive, yet ambiguous, and it is only the discipline of having to implement a system which makes us look at some aspects of it. In the case of T T , it was only through writing an implementation in the functional programming language Miranda 1 that the author came to understand the distinctive role of assumptions in T T , for instance.</li>
+<li>The system is expressive, as witnessed by the previous chapter, but are programs given in their most natural or efficient form? There is aost of proposals of how to augment the system, and we look at these in chapter 7. Crucial to them is the incorporation of a class of subset types, in which the witnessing information contained in a type like (∃x : A) . B(x) is suppressed. As well as describing the subset  type, we lay out the arguments for its addition to type theory, and conclude that it is not as necessary as has been thought. Other proposals include quotient (or equivalence class) types, and ways in which general recursion can be added to the system without its losing its properties like termination. A particularly elegant proposal for the addition of co-inductive types, such as infinite streams, without losing these properties, is examined.</li>
+<li>Chapter eight examines the foundations of the system: how it  compares with other systems for constructive mathematics,how models of it are formed and used and how certain of the rules, the closure rules, may be seen as being generated from the introduction rules, which state what are the canonical members of each type. We end the book with a survey of related systems, implemented or not, and some concluding remarks.</li>
+</ul>
+<p><strong>Types and Programming Languages</strong> , Class: A++</p>
+<ul>
+<li>Part I of the book discusses untyped systems. Basic concepts of
+abstract syntax, inductive definitions and proofs, inference rules,
+and operational semantics are introduced first in the setting of a
+very simple language of numbers and booleans, then repeated for the
+untyped lambda-calculus.</li>
+<li>Part II covers the simply typed lambda-calculus and a variety of
+basic language features such as products, sums, records, variants,
+references, and exceptions. A preliminary chapter on typed arithmetic
+expressions provides a gentle introduction to the key idea of type
+safety. An optional chapter develops a proof of normalization for the
+simply typed lambda-calculus using Tait’s method.</li>
+<li>Part III addresses the fundamental mechanism of subtyping; it
+includes a detailed discussion of metatheory and two extended case
+studies.</li>
+<li>Part IV covers recursive types, in both the simple iso-recursive and
+the trickier equirecursive formulations. The second of the two
+chapters in this part develops the metatheory of a system with
+equi-recursive types and subtyping in the mathematical framework of
+coinduction.</li>
+<li>Part V takes up polymorphism, with chapters on ML-style type
+reconstruction, the more powerful impredicative polymorphism of System
+F, existential quantification and its connections with abstract data
+types, and the combination of polymorphism and subtyping in systems
+with bounded quantification.</li>
+<li>Part VI deals with type operators. One chapter covers basic
+concepts; the next develops System F ω and its metatheory; the next
+combines type operators and bounded quantification to yield System F ω
+&lt;: ; the final chapter is a closing case study.</li>
+</ul>
+<h2 id="others-1">Others [1]</h2>
+<p><strong>Quantum Computation and Quantum Information</strong> , Class: D++ , Beginner-friendly</p>
+<ul>
+<li>Part I provides a broad overview of the main ideas and results of
+the field of quantum computation and quantum information, and develops
+the background material in computer science, mathematics and physics
+necessary to understand quantum computation and quantum information in
+depth. Chapter 1 is an introductory chapter which outlines the
+historical development and fundamental concepts of the field,
+highlighting some important open problems along the way. The material
+has been structured so as to be accessible even without a background
+in computer science or physics. The background material needed for a
+more detailed understanding is developed in Chapters 2 and 3, which
+treat in depth the fundamental notions of quantum mechanics and
+computer science, respectively. You may elect to concentrate more or
+less heavily on different chapters of Part I, depending upon your
+background, returning later as necessary to fill any gaps in your
+knowledge of the fundamentals of quantum mechanics and computer
+science.</li>
+<li>Part II describes quantum computation in detail. Chapter 4 describes
+the fundamental elements needed to perform quantum computation, and
+presents many elementary operations which may be used to develop more
+sophisticated applications of quantum computation. Chapters 5 and 6
+describe the quantum Fourier transform and the quantum search
+algorithm, the two fundamental quantum algorithms presently
+known. Chapter 5 also explains how the quantum Fourier transform may
+be used to solve the factoring and discrete logarithm problems, and
+the importance of these results to cryptography. Chapter 7 describes
+general design principles and criteria for good physical
+implementations of quantum computers, using as examples several
+realizations which have been successfully demonstrated in the
+laboratory.</li>
+<li>Part III is about quantum information: what it is, how information
+is represented and communicated using quantum states, and how to
+describe and deal with the corruption of quantum and classical
+information. Chapter 8 describes the properties of quantum noise which
+are needed to understand real-world quantum information processing,
+and the quantum operations formalism, a powerful mathematical tool for
+understanding quantum noise. Chapter 9 describes distance measures for
+quantum information which allow us to make quantitatively precise what
+it means to say that two items of quantum information are
+similar. Chapter 10 explains quantum error-correcting codes, which may
+be used to protect quantum computations against the effect of
+noise. An important result in this chapter is the threshold theorem,
+which shows that for realistic noise models, noise is in principle not
+a serious impediment to quantum computation. Chapter 11 introduces the
+fundamental information-theoretic concept of entropy, explaining many
+properties of entropy in both classical and quantum information
+theory. Finally, Chapter 12 discusses the information carrying
+properties of quantum states and quantum communication channels,
+detailing many of the strange and interesting properties such systems
+can have for the transmission of information both classical and
+quantum, and for the transmission of secret information.</li>
+</ul>
+
+</body>
+</html>
