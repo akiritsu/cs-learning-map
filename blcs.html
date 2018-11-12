@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>blcs.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: "Segoe WPC", "Segoe UI", "SFUIText-Light", "HelveticaNeue-Light", sans-serif, "Droid Sans Fallback";
+	font-size: 14px;
+	padding: 0 12px;
+	line-height: 22px;
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	color: #4080D0;
+	text-decoration: none;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+h1 code,
+h2 code,
+h3 code,
+h4 code,
+h5 code,
+h6 code {
+	font-size: inherit;
+	line-height: auto;
+}
+
+a:hover {
+	color: #4080D0;
+	text-decoration: underline;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left: 5px solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 14px;
+	line-height: 19px;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+.mac code {
+	font-size: 12px;
+	line-height: 18px;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+/** Theming */
+
+.vscode-light,
+.vscode-light pre code {
+	color: rgb(30, 30, 30);
+}
+
+.vscode-dark,
+.vscode-dark pre code {
+	color: #DDD;
+}
+
+.vscode-high-contrast,
+.vscode-high-contrast pre code {
+	color: white;
+}
+
+.vscode-light code {
+	color: #A31515;
+}
+
+.vscode-dark code {
+	color: #D7BA7D;
+}
+
+.vscode-light pre:not(.hljs),
+.vscode-light code > div {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre:not(.hljs),
+.vscode-dark code > div {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre:not(.hljs),
+.vscode-high-contrast code > div {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+.vscode-light blockquote,
+.vscode-dark blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.vscode-high-contrast blockquote {
+	background: transparent;
+	border-color: #fff;
+}
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family:  "Meiryo", "Segoe WPC", "Segoe UI", "SFUIText-Light", "HelveticaNeue-Light", sans-serif, "Droid Sans Fallback";
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+</head>
+<body>
+<h2 id="booklist-for-computer-science-amateurs">Booklist for Computer Science Amateurs</h2>
+<p><strong>A reasoned booklist for computer science amateurs and beginners.</strong></p>
+<p>Total: 96 books.</p>
+<p><strong>Class</strong></p>
+<p>EX: Classic books which are comprehensive and ell-organized.<br>
+A: Great and in-depth books in some specific fields.<br>
+B: Worth-reading.<br>
+C: Plain books or abstruse books which may be useful for some experts.<br>
+D: Partly useful.<br>
+E: General and substutitable.<br>
+&quot;+&quot; and &quot;++&quot; means it's potential helpful in some particular area.</p>
+<h1 id="algorithms-and-data-structures">Algorithms and data structures</h1>
+<hr>
+<blockquote>
+<p>Algorithms denotes Sequential and parallel computational procedures for solving a wide range of problems. A data structure is the organization and manipulation of data.</p>
+</blockquote>
+<p><em>Algorithms 4th Edition</em> , Class: A, primer</p>
+<p><em>Concrete Mathematics 2rd Edition</em> , Class: A+, primer</p>
+<p><em>Introduction to Algorithms</em> , Class: D</p>
+<p><em>The Art of Computer Programming</em> , Class: A++</p>
+<h1 id="artificial-intelligence">Artificial intelligence</h1>
+<hr>
+<h2 id="generic-artificial-intelligence">Generic Artificial intelligence</h2>
+<blockquote>
+<p>The implementation and study of systems that exhibit an autonomous intelligence or behavior of their own.</p>
+</blockquote>
+<p><em>Artificial Intelligence - A Modern Approach 3rd Edition</em> , Class: A, primer</p>
+<p><em>Paradigms of Artificial Intelligence Programming - Case Studies in Common LISP</em> , Class: B+* , primer</p>
+<h2 id="automated-reasoning">Automated reasoning</h2>
+<blockquote>
+<p>Solving engines, such as used in Prolog, which produce steps to a result given a query on a fact and rule database, and automated theorem provers that aim to prove mathematical theorems with some assistance from a programmer.</p>
+</blockquote>
+<h3 id="automated-theorem-proof">Automated Theorem Proof</h3>
+<p><em>Automated Theorem Proving</em> , Class: D</p>
+<p><em>Certified Programming with Dependent Types</em> , Class: A</p>
+<p><em>Interactive Theorem Proving and Program Development Coq’Art: The Calculus of Inductive Constructions</em> , Class: A++, primer</p>
+<p><em>Little Engines of Proof</em> , Class: D</p>
+<p><em>Mathematical Components</em> , Class: A</p>
+<p><em>Proof Trick Small Inversions</em> , Class: D</p>
+<p><em>Software Foundations</em> , Class: EX, primer</p>
+<ul>
+<li>Volume 1 Logical Foundations</li>
+<li>Volume 2 Programming Language Foundations</li>
+<li>Volume 3 Verified Functional Algorithms</li>
+<li>Volume 4 QuickChick</li>
+</ul>
+<h2 id="computer-vision">Computer vision</h2>
+<blockquote>
+<p>Algorithms for identifying three-dimensional objects from a two-dimensional picture.</p>
+</blockquote>
+<h2 id="soft-computing">Soft computing</h2>
+<blockquote>
+<p>the use of inexact solutions for otherwise extremely difficult problems:</p>
+</blockquote>
+<p><em>Foundations of Data Science</em> , Class: A, primer</p>
+<h3 id="machine-learning">Machine learning</h3>
+<blockquote>
+<p>Automated creation of a set of rules and axioms based on input.</p>
+</blockquote>
+<p><em>Machine Learning A Probabilistic Perspective</em> , Class: B+</p>
+<p><em>Pattern Recognition and Machine Learning</em> , Class: A</p>
+<p><em>The Elemtes of Statistical Learning</em> , Class: B+</p>
+<p><em>Reinforcement Learning, An Introduction</em> , Class: B+, primer</p>
+<h3 id="evolutionary-computing">Evolutionary computing</h3>
+<blockquote>
+<p>Biologically inspired algorithms.</p>
+</blockquote>
+<p><em>Artificial Intelligence - Neural Networks Algorithms, Applications, And Programming Techniques</em> , Class: C</p>
+<h2 id="natural-language-processing">Natural language processing</h2>
+<blockquote>
+<p>Building systems and algorithms that analyze, understand, and generate natural (human) languages.</p>
+</blockquote>
+<p><em>Prolog and Natural Language Analysis</em> , Class: B</p>
+<h2 id="robotics">Robotics</h2>
+<blockquote>
+<p>Algorithms for controlling the behaviour of robots.</p>
+</blockquote>
+<h2 id="expert-systems">Expert Systems</h2>
+<p><em>Intelligent Systems for Engineers and Scientists 2rd Edition - Adrian A. Hopgood</em> , Class: C</p>
+<p><em>The Handbook of Applied Expert Systems - Jay Liebowitz</em> , Class: C</p>
+<h1 id="communication-and-security">Communication and security</h1>
+<hr>
+<h2 id="networking">Networking</h2>
+<blockquote>
+<p>Algorithms and protocols for reliably communicating data across different shared or dedicated media, often including error correction.</p>
+</blockquote>
+<h2 id="computer-security">Computer security</h2>
+<blockquote>
+<p>Practical aspects of securing computer systems and computer networks.</p>
+</blockquote>
+<h2 id="cryptography">Cryptography</h2>
+<blockquote>
+<p>Applies results from complexity, probability, algebra and number theory to invent and break codes, and analyze the security of cryptographic protocols.</p>
+</blockquote>
+<h1 id="computer-architecture">Computer architecture</h1>
+<hr>
+<h2 id="computer-architecture">Computer architecture</h2>
+<blockquote>
+<p>The design, organization, optimization and verification of a computer system, mostly about CPUs and Memory subsystem (and the bus connecting them).</p>
+</blockquote>
+<h2 id="operating-systems">Operating systems</h2>
+<blockquote>
+<p>Systems for managing computer programs and providing the basis of a usable system.</p>
+</blockquote>
+<p><em>Computer Systems A Programmers Perspective 3rd Global Edition</em> , Class: EX, primer</p>
+<p><em>Modern Operating Systems 4th Edition</em> , Class: B++, primer</p>
+<p><em>Operating System Concepts 7th Edition</em> , Class: B, primer</p>
+<p><em>Understanding The Linux Kernel</em> , Class: D+</p>
+<h1 id="concurrent-parallel-and-distributed-systems">Concurrent, parallel, and distributed systems</h1>
+<hr>
+<h2 id="parallel-computing">Parallel computing</h2>
+<blockquote>
+<p>The theory and practice of simultaneous computation; data safety in any multitasking or multithreaded environment.</p>
+</blockquote>
+<h2 id="concurrency-computer-science">Concurrency (computer science)</h2>
+<blockquote>
+<p>Computing using multiple concurrent threads of execution, devising algorithms for solving problems on multiple processors to achieve maximal speed-up compared to sequential execution.</p>
+</blockquote>
+<h2 id="distributed-computing">Distributed computing</h2>
+<blockquote>
+<p>Computing using multiple computing devices over a network to accomplish a common objective or task and thereby reducing the latency involved in single processor contributions for any tasks.</p>
+</blockquote>
+<h1 id="mathematical-foundations">Mathematical foundations</h1>
+<hr>
+<p><em>Introduction to Linear Algebra</em> , Class: C+, primer</p>
+<p><em>Mathematics for Computer Science 2013</em> , Class: B++</p>
+<p><em>Probability theory and examples 4th Edtion</em> , Class: C, primer</p>
+<p><em>Foundations of Computer Science, C Edition</em> , Class: EX, primer</p>
+<h2 id="coding-theory">Coding theory</h2>
+<blockquote>
+<p>Useful in networking and other areas where computers communicate with each other.</p>
+</blockquote>
+<h2 id="game-theory">Game theory</h2>
+<blockquote>
+<p>Useful in artificial intelligence and cy bernetics.</p>
+</blockquote>
+<h2 id="graph-theory">Graph theory</h2>
+<blockquote>
+<p>Foundations for data structures and searching algorithms.</p>
+</blockquote>
+<p><em>General Topology, John L. Kelley</em> , Class: C, primer</p>
+<h2 id="mathematical-logic">Mathematical logic</h2>
+<blockquote>
+<p>Boolean logic and other ways of modeling logical queries; the uses and limitations of formal proof methods</p>
+</blockquote>
+<p><em>A Course In Mathematical Logic</em> , Class: A+, primer</p>
+<p><em>Discrete Mathematics and Its Applications</em> , Class: B+, primer</p>
+<p><em>Logic in Computer Science, Modelling and Reasoning about Systems</em> , Class: EX, primer</p>
+<p><em>Logic for Applications 2nd Ed</em> , Class: A, primer</p>
+<p><em>Mathematical Logic, Ebbinghaus</em> , Class: C, primer</p>
+<h3 id="algebraic-logic">Algebraic Logic</h3>
+<p><em>Boolean Functions Theory, Algorithms, and Applications</em> , Class: C+</p>
+<h3 id="category-theory">Category Theory</h3>
+<p>*Category Theory A Gentle Introduction, Class: A+, primer</p>
+<p><em>Categories for the Working Mathematician, Saunders Mac Lane</em> , Class: A++</p>
+<p><em>Basic Category Theory for Computer Scientists</em> , Class: C, primer</p>
+<h3 id="formal-systems">Formal Systems</h3>
+<p><em>Theory of Formal Systems</em> , Class: C</p>
+<h3 id="lattice-theory">Lattice Theory</h3>
+<p><em>Introduction to Lattices and Order</em> , Class: E, primer</p>
+<h3 id="lambda-calculus">Lambda-calculus</h3>
+<p><em>Lambda-Calculus and Combinators, an Introduction</em> , Class: A</p>
+<p><em>Programming Languages and Lambda Calculus</em> , Class: C+</p>
+<p><em>The Lambda Calculus, It's syntax and Semantics</em> , Class: A+</p>
+<h3 id="modal-theory">Modal Theory</h3>
+<h3 id="pi-calculus">Pi-calculus</h3>
+<p><em>An Introduction to the pi-Calculus</em> , Class: C, primer</p>
+<p><em>Handbook of Process Algebra</em> , Class: D</p>
+<p><em>Introduction to Process Algreba</em> , Class: B++, primer</p>
+<p>*The Pi-Calculus A Theory of Mobile Processes, Class: B+</p>
+<h3 id="proof-theory">Proof Theory</h3>
+<p><em>Proof Theory, Gaisi Takeuti, 2nd Ed</em> , Class: B</p>
+<p><em>Structural Proof Theory</em> , Class: B+</p>
+<h3 id="recursion-theory">Recursion Theory</h3>
+<p><em>Recursion Theory for Metamathematics, Raymond M. Smullyan</em> , Class: B</p>
+<p><em>COMPUTABILITY An introduction to recursive function theory</em> , Class: D, primer</p>
+<h3 id="set-theory">Set Theory</h3>
+<p><em>Introduction to Axiomatic set theory, Takeuti G. Zaring W.</em> , Class: B, primer</p>
+<h2 id="number-theory">Number theory</h2>
+<blockquote>
+<p>Theory of the integers. Used in cryptography as well as a test domain in artificial intelligence.</p>
+</blockquote>
+<h1 id="programming-languages-and-compilers">Programming languages and compilers</h1>
+<hr>
+<p><em>Lectures on the Curry-Howard isomorphism-Elsevier Science</em> , Class: A, primer</p>
+<h2 id="compiler-theory">Compiler theory</h2>
+<blockquote>
+<p>Theory of compiler design, based on Automata theory.</p>
+</blockquote>
+<p><em>Compilers, Principles, Techniques, and Tools, 2nd Edition</em> , Class: C</p>
+<p><em>Compiling With Continuations</em> , Class: D+</p>
+<p><em>Language Implementation Patterns</em> , Class: B++, primer</p>
+<h2 id="programming-language-pragmatics">Programming language pragmatics</h2>
+<blockquote>
+<p>Taxonomy of programming languages, their strength and weaknesses. Various programming paradigms, such as object-oriented programming.</p>
+</blockquote>
+<p><em>Concepts, Techniques and Models of Computer Programming</em> , Class: EX</p>
+<p><em>Essentials of Programming Languages</em> , Class: B+, primer</p>
+<p><em>Let Over Lambda</em> , Class: A+</p>
+<p><em>LISP In Small Pieces</em> , Class: B++</p>
+<p><em>Parsing techniques - a practical guide</em> , Class: B</p>
+<h2 id="programming-language-theory">Programming language theory</h2>
+<p><em>Concepts Of Programming Languages, 11th Ed</em> , Class: EX, primer</p>
+<p><em>Foundations for Programming Languages, John.C..Mitchell</em> , Class: EX, primer</p>
+<p><em>Practical Foundations for Programming Languages 2nd Edition</em> , Class: c</p>
+<p><em>Programming Languages Application and Interpretation</em> , Class: D</p>
+<p><em>Structure and Interpretation of Computer Programs</em> , Class: B, primer</p>
+<p><em>The Art of the Metaobject Protocol</em> , Class: E</p>
+<h2 id="formal-semantics">Formal semantics</h2>
+<blockquote>
+<p>rigorous mathematical study of the meaning of programs.</p>
+</blockquote>
+<p><em>Concrete Semantics</em> , Class: A</p>
+<h2 id="type-theory">Type theory</h2>
+<blockquote>
+<p>Formal analysis of the types of data, and the use of these types to understand properties of programs — especially program safety.</p>
+</blockquote>
+<p><em>Homotopy Type Theory</em> , Class: A</p>
+<p><em>Type Theory and Functional Programming</em> , Class: A+</p>
+<p><em>Types and Programming Languages</em> , Class: A++</p>
+<h1 id="software-engineering">Software engineering</h1>
+<hr>
+<h2 id="computer-programming">Computer programming</h2>
+<blockquote>
+<p>The practice of using a programming language to implement algorithms.</p>
+</blockquote>
+<p><em>A Little Java, A Few Patterns</em> , Class: C</p>
+<p><em>An Introduction To Programming In Emacs Lisp, 2nd Edition</em> , Class: D, primer</p>
+<p><em>Automate the Boring Stuff with Python</em> , Class: E++, primer</p>
+<p><em>Hacker's Delight 2nd Edition</em> , Class: A</p>
+<p><em>How To Design Programs</em> , Class: A+, primer</p>
+<p><em>On Lisp</em> , Class: C</p>
+<p><em>Practical Common Lisp</em> , Class: C, primer</p>
+<p><em>Programming in IDRIS</em> , A Tutorial* , Class: A+, primer</p>
+<p><em>Programming Elixir 1.3</em> , Class: B, primer</p>
+<p><em>Real World OCaml</em> , Class: C, primer</p>
+<p><em>Real World Haskell</em> , Class: C</p>
+<p><em>Rust Essentials</em> , Class: B, primer</p>
+<p><em>The Art of Prolog 2nd Edition</em> , Class: D</p>
+<p><em>The Little Schemer 4th Edition</em> , Class: C+, primer</p>
+<p><em>The Reasoned Schemer</em> , Class: C</p>
+<p><em>The Scheme Programming Language 4th Edition</em> , Class: E</p>
+<p><em>The Seasoned Schemer</em> , Class: C, primerp</p>
+<h2 id="formal-methods">Formal methods</h2>
+<blockquote>
+<p>Mathematical approaches for describing and reasoning about software design.</p>
+</blockquote>
+<p><em>Formal Reasionning About Programs</em> , Class B+</p>
+<h2 id="program-analysis-and-verification">Program Analysis and Verification</h2>
+<p><em>Principle of Model Checking</em> , Class: A</p>
+<p><em>Principles of Program Analysis</em> , Class: A, primer</p>
+<h1 id="theory-of-computation">Theory of computation</h1>
+<hr>
+<p><em>Introduction to Languages and The Theory of Computation 4th Edition</em> , Class: C</p>
+<h2 id="automata-theory">Automata theory</h2>
+<blockquote>
+<p>Different logical structures for solving problems.</p>
+</blockquote>
+<p><em>An Introduction to Formal Languages and Automata 3rd Edition</em> , Class: B+</p>
+<p><em>Introduction To Automata Theory Languages, and Computation</em> , Class: D, primer</p>
+<h2 id="computability-theory">Computability theory</h2>
+<blockquote>
+<p>What is calculable with the current models of computers. Proofs developed by Alan Turing and others provide insight into the possibilities of what may be computed and what may not.</p>
+</blockquote>
+<h2 id="computational-complexity-theory">Computational complexity theory</h2>
+<blockquote>
+<p>Fundamental bounds (especially time and storage space) on classes of computations.</p>
+</blockquote>
+<h2 id="quantum-computing-theory">Quantum computing theory</h2>
+<blockquote>
+<p>Explores computational models involving quantum superposition of bits.</p>
+</blockquote>
+<p><em>Quantum Computation and Quantum Information</em> , Class: C++, primer</p>
+
+</body>
+</html>
