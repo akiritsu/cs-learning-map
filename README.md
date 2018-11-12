@@ -1,8 +1,8 @@
-## A reasoned booklist for computer science amateurs and beginners.
+## A reasoned booklist for computer science amateurs and beginners (totally 107 books).
+
+Original Link: http://nagajamu.com/2018/10/06/booklist/
 
 Update: 2018-11-11
-
-Total: 106 books.
 
 Ordering of class: EX -> A -> B -> C -> D -> E, “+” and “++” means probably useful in some specific areas.
 
@@ -599,45 +599,4 @@ Models of λ-calculus, Scott’s D ∞ and other models.
   historical development and fundamental concepts of the field,
   highlighting some important open problems along the way. The material
   has been structured so as to be accessible even without a background
-  in computer science or physics. The background material needed for a
-  more detailed understanding is developed in Chapters 2 and 3, which
-  treat in depth the fundamental notions of quantum mechanics and
-  computer science, respectively. You may elect to concentrate more or
-  less heavily on different chapters of Part I, depending upon your
-  background, returning later as necessary to fill any gaps in your
-  knowledge of the fundamentals of quantum mechanics and computer
-  science.
-- Part II describes quantum computation in detail. Chapter 4 describes
-  the fundamental elements needed to perform quantum computation, and
-  presents many elementary operations which may be used to develop more
-  sophisticated applications of quantum computation. Chapters 5 and 6
-  describe the quantum Fourier transform and the quantum search
-  algorithm, the two fundamental quantum algorithms presently
-  known. Chapter 5 also explains how the quantum Fourier transform may
-  be used to solve the factoring and discrete logarithm problems, and
-  the importance of these results to cryptography. Chapter 7 describes
-  general design principles and criteria for good physical
-  implementations of quantum computers, using as examples several
-  realizations which have been successfully demonstrated in the
-  laboratory.
-- Part III is about quantum information: what it is, how information
-  is represented and communicated using quantum states, and how to
-  describe and deal with the corruption of quantum and classical
-  information. Chapter 8 describes the properties of quantum noise which
-  are needed to understand real-world quantum information processing,
-  and the quantum operations formalism, a powerful mathematical tool for
-  understanding quantum noise. Chapter 9 describes distance measures for
-  quantum information which allow us to make quantitatively precise what
-  it means to say that two items of quantum information are
-  similar. Chapter 10 explains quantum error-correcting codes, which may
-  be used to protect quantum computations against the effect of
-  noise. An important result in this chapter is the threshold theorem,
-  which shows that for realistic noise models, noise is in principle not
-  a serious impediment to quantum computation. Chapter 11 introduces the
-  fundamental information-theoretic concept of entropy, explaining many
-  properties of entropy in both classical and quantum information
-  theory. Finally, Chapter 12 discusses the information carrying
-  properties of quantum states and quantum communication channels,
-  detailing many of the strange and interesting properties such systems
-  can have for the transmission of information both classical and
-  quantum, and for the transmission of secret information.
+  in computer science or 
