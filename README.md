@@ -1,400 +1,500 @@
 ## Booklist for Computer Science Amateurs
 
-Update: 2018-11-12
+A reasoned and compact book list for computer science amateurs and beginners, aiming to provide a direct pathway to study on a specific subfield of Computer Science. Generally outdated or substitutable book would be removed dynamically in this book list, and only best choices are listed here.
 
-Original Link: http://www.nekiri.com/computerscience/2013/07/08/booklist.html
+Amount: 144 books; update: 2018-11-13.
 
-**A reasoned booklist for computer science amateurs and beginners.**
-
-Total: 96 books.
-
-**Class**
-
-EX: Classic books which are comprehensive and ell-organized.<br>
+**Class**<br>
+EX: Classic books which are comprehensive and well-organized.<br>
 A: Great and in-depth books in some specific fields.<br>
 B: Worth-reading.<br>
 C: Plain books or abstruse books which may be useful for some experts.<br>
 D: Partly useful.<br>
 E: General and substutitable.<br>
-"+" and "++" means it's potential helpful in some particular area.
+"+" or "++" stands for the potential helpfulness in some particular area.
 
-# Algorithms and data structures
-----
+**TODO:**
+1. **authors**
+2. **properties**: One or more Words from: primer, advanced, handbook, theoretical, practical, 
+3. **keywords**: describe topics and the exact subfield.
+4. **review**: 100-500 words.
+
+## Algorithms and data structures
 
 > Algorithms denotes Sequential and parallel computational procedures for solving a wide range of problems. A data structure is the organization and manipulation of data.
 
-*Algorithms 4th Edition* , Class: A, primer
+### Generic Algorithms
 
-*Concrete Mathematics 2rd Edition* , Class: A+, primer
+*Algorithms, 4th Edition*, Class: A, primer
 
-*Introduction to Algorithms* , Class: D
+*Concrete Mathematics, 2rd Edition*, Class: A+, primer
 
-*The Art of Computer Programming* , Class: A++
+*Introduction to Algorithms*, Class: B, primer
 
-# Artificial intelligence
-----
+*The Art of Computer Programming*, Class: A++, handbook, advanced
 
-## Generic Artificial intelligence
+### Specialized Algorithms
+
+*Data Structures and Network Algorithms*, by Robert Endre Tarjan, Class: A
+
+*Combinatorial Optimization: Algorithms And Complexity*, Class: B
+
+*Combinatorial Optimization: Networks and Matroids*, by Eugene Lawler, Class: B, advanced
+
+## Artificial intelligence
+
+
+### Generic Artificial intelligence
 
 > The implementation and study of systems that exhibit an autonomous intelligence or behavior of their own.
 
-*Artificial Intelligence - A Modern Approach 3rd Edition* , Class: A, primer
+*Artificial Intelligence - A Modern Approach, 3rd Edition*, Class: A, primer
 
-*Paradigms of Artificial Intelligence Programming - Case Studies in Common LISP* , Class: B+* , primer
+*Paradigms of Artificial Intelligence Programming - Case Studies in Common LISP*, Class: B+, primer
 
-## Automated reasoning
+*Decision Procedures: an Algorithmic Point of View*, by Daniel Kroening, Ofer Strichman, Class: B+
+
+*Knowledge representation, reasoning and declarative problem solving with Answer sets*, by Chitta Baral, Class: TBD
+
+### Automated reasoning
 
 > Solving engines, such as used in Prolog, which produce steps to a result given a query on a fact and rule database, and automated theorem provers that aim to prove mathematical theorems with some assistance from a programmer.
 
-### Automated Theorem Proof
+*Automated Theorem Proving*, Class: TBD
 
-*Automated Theorem Proving* , Class: D
+*Certified Programming with Dependent Types*, Class: A
 
-*Certified Programming with Dependent Types* , Class: A
+*Interactive Theorem Proving and Program Development Coq’Art: The Calculus of Inductive Constructions*, Class: A++, primer
 
-*Interactive Theorem Proving and Program Development Coq’Art: The Calculus of Inductive Constructions* , Class: A++, primer
+*Little Engines of Proof*, Class: TBD
 
-*Little Engines of Proof* , Class: D
+*Mathematical Components*, Class: A
 
-*Mathematical Components* , Class: A
+*Proof Trick Small Inversions*, Class: TBD
 
-*Proof Trick Small Inversions* , Class: D
-
-*Software Foundations* , Class: EX, primer
+*Software Foundations*, Class: EX, primer
 
 - Volume 1 Logical Foundations
 - Volume 2 Programming Language Foundations
 - Volume 3 Verified Functional Algorithms
 - Volume 4 QuickChick
 
-## Computer vision
+### Computer vision
 
 > Algorithms for identifying three-dimensional objects from a two-dimensional picture.
 
-## Soft computing
+*Computer Vision: Algorithms and Applications*, by Richard Szeliski, Class: B, advanced
+
+*Computer Vision: Models, Learning, and Inference*, by Dr Simon J. D. Prince, Class: A, 
+
+### Soft computing
 
 > the use of inexact solutions for otherwise extremely difficult problems:
 
-*Foundations of Data Science* , Class: A, primer
+*Foundations of Data Science*, Class: A, primer
 
-### Machine learning
+**Machine learning**
 
 > Automated creation of a set of rules and axioms based on input.
 
-*Machine Learning A Probabilistic Perspective* , Class: B+
+*Machine Learning A Probabilistic Perspective*, Class: B+
 
-*Pattern Recognition and Machine Learning* , Class: A
+*Neural Networks and Deep Learning*, by Michael Nielsen, Class: A
 
-*The Elemtes of Statistical Learning* , Class: B+
+*Optimal Learning* by Warren B. Powell, Class: B
 
-*Reinforcement Learning, An Introduction* , Class: B+, primer
+*Pattern Recognition and Machine Learning*, Class: A
 
-### Evolutionary computing
+*The Elemtes of Statistical Learning*, Class: B+
+
+*Reinforcement Learning, An Introduction*, Class: B+, primer
+
+**Evolutionary computing**
 
 > Biologically inspired algorithms.
 
-*Artificial Intelligence - Neural Networks Algorithms, Applications, And Programming Techniques* , Class: C
+*Artificial Intelligence - Neural Networks Algorithms, Applications, And Programming Techniques*, Class: C
 
-## Natural language processing
+*Fuzzy Sets And Systems Theory And Applications*, byDidier Dubois, Henri Prade, Class: B
+
+### Natural language processing
 
 > Building systems and algorithms that analyze, understand, and generate natural (human) languages.
 
-*Prolog and Natural Language Analysis* , Class: B
+*Speech and Language Processing*, by Dan jurasfsky, Class: TBD
 
-## Robotics
+*Neural Network Methods for Natural Language Processing*, by Yoav Goldberg, Class: A, primer
+
+### Robotics
 
 > Algorithms for controlling the behaviour of robots.
 
-## Expert Systems
+*Introduction to Robotics: Mechanics, Planning, and Control*, Class: A
 
-*Intelligent Systems for Engineers and Scientists 2rd Edition - Adrian A. Hopgood* , Class: C
+### Expert Systems
 
-*The Handbook of Applied Expert Systems - Jay Liebowitz* , Class: C
+*Intelligent Systems for Engineers and Scientists, 2rd Edition*, Adrian A. Hopgood, Class: C
 
-# Communication and security
-----
+*Introduction to Expert Systems, 3rd edition*, by  Jackson P. , Addison Wesley, Class: TBD, primer
 
-## Networking
+*Expert Systems, Principles and Programming*, by Giarratano J. , Riley G. , Class: C, primer 
+
+*Introduction to Knowledge Systems*, by Stefik M., Morgan Kaufmann, Class: A, advanced
+
+*The Handbook of Applied Expert Systems*, Jay Liebowitz, Class: C, handbook
+
+## Communication and security
+
+### Networking
 
 > Algorithms and protocols for reliably communicating data across different shared or dedicated media, often including error correction.
 
-## Computer security
+*Computer Networking: A Top-Down Approach*, Class: A, primer
+
+### Computer security
 
 > Practical aspects of securing computer systems and computer networks.
 
-## Cryptography
+*Security Engineering: A Guide to Building Dependable Distributed Systems*, by Ross J. Anderson, Class: A
+
+### Cryptography
 
 > Applies results from complexity, probability, algebra and number theory to invent and break codes, and analyze the security of cryptographic protocols.
 
-# Computer architecture
-----
+*Applied Cryptography: Protocols, Algorithms, and Source Code in C*, by Bruce Schneier, Class: A
 
 ## Computer architecture
 
+### Computer architecture
+
 > The design, organization, optimization and verification of a computer system, mostly about CPUs and Memory subsystem (and the bus connecting them).
 
-## Operating systems
+*Computer Organization and Design*, Class: EX, primer
+
+*Principles of Computer System Design: An Introduction*, Class: A+
+
+### Operating systems
 
 > Systems for managing computer programs and providing the basis of a usable system.
 
-*Computer Systems A Programmers Perspective 3rd Global Edition* , Class: EX, primer
+*Computer Systems A Programmers Perspective, 3rd Global Edition*, Class: A, primer
 
-*Modern Operating Systems 4th Edition* , Class: B++, primer
+*Modern Operating Systems, 4th Edition*, Class: B+, primer
 
-*Operating System Concepts 7th Edition* , Class: B, primer
+*Operating System Concepts, 7th Edition*, Class: B, primer
 
-*Understanding The Linux Kernel* , Class: D+
+*Operating Systems: Three Easy Pieces*, Class: B
 
-# Concurrent, parallel, and distributed systems
-----
+*Understanding The Linux Kernel*, Class: TBD
 
-## Parallel computing
+## Concurrent, parallel, and distributed systems
+
+### Parallel computing
 
 > The theory and practice of simultaneous computation; data safety in any multitasking or multithreaded environment.
 
-## Concurrency (computer science)
+*Parallel Programming in C with MPI and OpenMP*, by Quinn, Class: B, practical
+
+*CUDA Programming: A Developer's Guide to Parallel Computing with GPUs*, by Shane Cook, Class: B, practical
+
+### Concurrency (computer science)
 
 > Computing using multiple concurrent threads of execution, devising algorithms for solving problems on multiple processors to achieve maximal speed-up compared to sequential execution.
 
-## Distributed computing
+*Communicating Sequential Processes*, by Hoare, Class: TBD, theoretical
+
+*The Theory and Practice of Concurrency*, by Roscoe, Class: TBD, theoretical
+
+### Distributed computing
 
 > Computing using multiple computing devices over a network to accomplish a common objective or task and thereby reducing the latency involved in single processor contributions for any tasks.
+*Operating Systems: Concurrent and Distributed Software Design*, by Jean Bacon, Class: C
 
-# Mathematical foundations
-----
+*Distributed Systems, 3rd Edition*, by Maarten van Steen, Class: A, primer
 
-*Introduction to Linear Algebra* , Class: C+, primer
+## Mathematical foundations
 
-*Mathematics for Computer Science 2013* , Class: B++
+*Introduction to Linear Algebra*, Class: C+, primer
 
-*Probability theory and examples 4th Edtion* , Class: C, primer
+*Mathematics for Computer Science 2013*, Class: EX, primer
 
-*Foundations of Computer Science, C Edition* , Class: EX, primer
+*Probability theory and examples, 4th Edition*, Class: C, primer
 
-## Coding theory
+*Foundations of Computer Science, C Edition*, Class: EX, primer
+
+### Coding theory
 
 > Useful in networking and other areas where computers communicate with each other.
 
-## Game theory
+*Information Theory, Inference, and Learning Algorithms*, byDavid MacKay, Class: A
 
-> Useful in artificial intelligence and cy bernetics.
+### Combinatorial Mathematics
 
-## Graph theory
+> Combinatorics concerned with counting, both as a means and an end in obtaining results, and certain properties of finite structures. 
+
+*Introduction to Combinatorial Mathematics (Computer Science Series)*, by Chung L. Liu, Class: B+
+
+### Graph theory
 
 > Foundations for data structures and searching algorithms.
 
-*General Topology, John L. Kelley* , Class: C, primer
+*General Topology, John L. Kelley*, Class: C, primer
 
-## Mathematical logic
+### Mathematical logic
 
 > Boolean logic and other ways of modeling logical queries; the uses and limitations of formal proof methods
 
-*A Course In Mathematical Logic* , Class: A+, primer
+*A First Course in Logic: An Introduction to Model Theory, Proof Theory, Computability, and Complexity*, by Shawn Hedman, Class: A+
 
-*Discrete Mathematics and Its Applications* , Class: B+, primer
+*Discrete Mathematics and Its Applications*, Class: B+, primer
 
-*Logic in Computer Science, Modelling and Reasoning about Systems* , Class: EX, primer
+*Logic in Computer Science, Modelling and Reasoning about Systems*, Class: EX, primer
 
-*Logic for Applications 2nd Ed* , Class: A, primer
+*Logic for Applications 2nd Ed*, Class: A, primer
 
-*Mathematical Logic, Ebbinghaus* , Class: C, primer
+*Mathematical Logic, Ebbinghaus*, Class: C, primer
 
-### Algebraic Logic
+**Algebraic Logic**
 
-*Boolean Functions Theory, Algorithms, and Applications* , Class: C+
+*Boolean Functions Theory, Algorithms, and Applications*, Class: C+
 
-### Category Theory
+**Category Theory**
 
 *Category Theory A Gentle Introduction, Class: A+, primer
 
-*Categories for the Working Mathematician, Saunders Mac Lane* , Class: A++
+*Categories for the Working Mathematician, Saunders Mac Lane*, Class: A++
 
-*Basic Category Theory for Computer Scientists* , Class: C, primer
+*Basic Category Theory for Computer Scientists*, Class: C, primer
 
-### Formal Systems
+**Formal Systems**
 
-*Theory of Formal Systems* , Class: C
+*Theory of Formal Systems*, Class: C
 
-### Lattice Theory
+**Lattice Theory**
 
-*Introduction to Lattices and Order* , Class: E, primer
+*Introduction to Lattices and Order*, Class: TBD, primer
 
-### Lambda-calculus
+**Lambda-calculus**
 
-*Lambda-Calculus and Combinators, an Introduction* , Class: A
+*Lambda-Calculus and Combinators, an Introduction*, Class: A
 
-*Programming Languages and Lambda Calculus* , Class: C+
+*Programming Languages and Lambda Calculus*, Class: C+
 
-*The Lambda Calculus, It's syntax and Semantics* , Class: A+
+*The Lambda Calculus, It's syntax and Semantics*, Class: A+
 
-### Modal Theory
+**Modal Theory**
 
-### Pi-calculus
+**Pi-calculus**
 
-*An Introduction to the pi-Calculus* , Class: C, primer
+*An Introduction to the pi-Calculus*, Class: C, primer
 
-*Handbook of Process Algebra* , Class: D
+*Handbook of Process Algebra*, Class: TBD
 
-*Introduction to Process Algreba* , Class: B++, primer
+*Introduction to Process Algreba*, Class: B++, primer
 
-*The Pi-Calculus A Theory of Mobile Processes, Class: B+
+*The Pi-Calculus A Theory of Mobile Processes*, Class: B+
 
-### Proof Theory
+**Proof Theory**
 
-*Proof Theory, Gaisi Takeuti, 2nd Ed* , Class: B
+*Proof Theory, Gaisi Takeuti, 2nd Ed*, Class: B
 
-*Structural Proof Theory* , Class: B+
+*Structural Proof Theory*, Class: B+
 
-### Recursion Theory
+**Recursion Theory**
 
-*Recursion Theory for Metamathematics, Raymond M. Smullyan* , Class: B
+*Recursion Theory for Metamathematics*, by Raymond M. Smullyan, Class: B
 
-*COMPUTABILITY An introduction to recursive function theory* , Class: D, primer
+*COMPUTABILITY An introduction to recursive function theory*, Class: TBD, primer
 
-### Set Theory
+**Set Theory**
 
-*Introduction to Axiomatic set theory, Takeuti G. Zaring W.* , Class: B, primer
+*Introduction to Axiomatic set theory*, by Takeuti G. Zaring W., Class: B, primer
 
-## Number theory
+### Number theory
 
 > Theory of the integers. Used in cryptography as well as a test domain in artificial intelligence.
 
-# Programming languages and compilers
-----
+*An Introduction To The Theory Of Numbers*, by Ivan Niven,  Hugh L. Montgomery, Herbert S. Zuckerman, Class: B, primer
 
-*Lectures on the Curry-Howard isomorphism-Elsevier Science* , Class: A, primer
+## Programming languages and compilers
 
-## Compiler theory
+*Lectures on the Curry-Howard isomorphism-Elsevier Science*, Class: A, primer
+
+### Compiler theory
 
 > Theory of compiler design, based on Automata theory.
 
-*Compilers, Principles, Techniques, and Tools, 2nd Edition* , Class: C
+*Advanced Compiler Design and Implementation*, Class: B, advanced
 
-*Compiling With Continuations* , Class: D+
+*Compilers, Principles, Techniques, and Tools, 2nd Edition*, Class: B, advanced, handbook
 
-*Language Implementation Patterns* , Class: B++, primer
+*Compiling With Continuations*, Class: TBD+
 
-## Programming language pragmatics
+*Language Implementation Patterns*, Class: B++, primer
+
+*Modern Compiler Implementation In Java*, Class: A, primer
+
+### Programming language pragmatics
 
 > Taxonomy of programming languages, their strength and weaknesses. Various programming paradigms, such as object-oriented programming.
 
-*Concepts, Techniques and Models of Computer Programming* , Class: EX
+*Programming Language Pragmatics, Third Edition*, by Michael L. Scott, Class: A+
 
-*Essentials of Programming Languages* , Class: B+, primer
+### Programming language theory
 
-*Let Over Lambda* , Class: A+
+> A branch of computer science that deals with the design, implementation, analysis, characterization, and classification of programming languages and their individual features.
 
-*LISP In Small Pieces* , Class: B++
 
-*Parsing techniques - a practical guide* , Class: B
+*Concepts of Programming Languages, 11th Ed*, Class: A, primer
 
-## Programming language theory
+*Concepts, Techniques and Models of Computer Programming*, Class: A++
 
-*Concepts Of Programming Languages, 11th Ed* , Class: EX, primer
+*Essentials of Programming Languages*, Class: B+, primer
 
-*Foundations for Programming Languages, John.C..Mitchell* , Class: EX, primer
+*Foundations for Programming Languages*, by John.C..Mitchell, Class: A+, primer
 
-*Practical Foundations for Programming Languages 2nd Edition* , Class: c
+*Let Over Lambda*, Class: A+
 
-*Programming Languages Application and Interpretation* , Class: D
+*Practical Foundations for Programming Languages, 2nd Edition*, Class: c
 
-*Structure and Interpretation of Computer Programs* , Class: B, primer
+*Programming Languages Application and Interpretation*, Class: TBD
 
-*The Art of the Metaobject Protocol* , Class: E
+*Structure and Interpretation of Computer Programs*, Class: B, primer
 
-## Formal semantics
+*The Art of the Metaobject Protocol*, Class: TBD
 
-> rigorous mathematical study of the meaning of programs.
+### Formal semantics
 
-*Concrete Semantics* , Class: A
+> Rigorous mathematical study of the meaning of programs.
 
-## Type theory
+*Concrete Semantics*, Class: A
+
+### Type theory
 
 > Formal analysis of the types of data, and the use of these types to understand properties of programs — especially program safety.
 
-*Homotopy Type Theory* , Class: A
+*Homotopy Type Theory*, Class: A
 
-*Type Theory and Functional Programming* , Class: A+
+*Type Theory and Functional Programming*, Class: A+
 
-*Types and Programming Languages* , Class: A++
+*Types and Programming Languages*, Class: A++
 
-# Software engineering
-----
+## Software engineering
 
-## Computer programming
+### Algorithm Design
+
+> Using ideas from algorithm theory to creatively design solutions to real tasks.
+
+*Algorithm Design*, Class: A, primer
+
+*The Algorithm Design Manual*, Class: A, primer
+
+### Computer programming
 
 > The practice of using a programming language to implement algorithms.
 
-*A Little Java, A Few Patterns* , Class: C
+*A Little Java, A Few Patterns*, Class: C
 
-*An Introduction To Programming In Emacs Lisp, 2nd Edition* , Class: D, primer
+*Automate the Boring Stuff with Python*, Class: TBD, primer
 
+*Introduction to Computation and Programming Using Python*, Class
 
-*Automate the Boring Stuff with Python* , Class: E++, primer
+*Hacker's Delight, 2nd Edition*, Class: A
 
-*Hacker's Delight 2nd Edition* , Class: A
+*How To Design Programs*, Class: A+, primer
 
-*How To Design Programs* , Class: A+, primer
+*Programming Pearls*, Class: A
 
-*On Lisp* , Class: C
-
-*Practical Common Lisp* , Class: C, primer
-
-*Programming in IDRIS* , A Tutorial* , Class: A+, primer
-
-*Programming Elixir 1.3* , Class: B, primer
-
-*Real World OCaml* , Class: C, primer
-
-*Real World Haskell* , Class: C
-
-*Rust Essentials* , Class: B, primer
-
-*The Art of Prolog 2nd Edition* , Class: D
-
-*The Little Schemer 4th Edition* , Class: C+, primer
-
-*The Reasoned Schemer* , Class: C
-
-*The Scheme Programming Language 4th Edition* , Class: E
-
-*The Seasoned Schemer* , Class: C, primerp
-
-## Formal methods
+### Formal methods
 
 > Mathematical approaches for describing and reasoning about software design.
 
-*Formal Reasionning About Programs* , Class B+
+*Formal Reasionning About Programs*, Class: B+
 
-## Program Analysis and Verification
+### Program Analysis and Verification
 
-*Principle of Model Checking* , Class: A
+*Principle of Model Checking*, Class: A
 
-*Principles of Program Analysis* , Class: A, primer
+*Principles of Program Analysis*, Class: A, primer
 
-# Theory of computation
-----
+## Theory of computation
 
-*Introduction to Languages and The Theory of Computation 4th Edition* , Class: C
+*Introduction to Languages and The Theory of Computation, 4th Edition*, Class: C
 
-## Automata theory
+*The Calculus of Computation: Decision Procedures with Applications to Verification*, by Aaron R. Bradley, Class: B
+
+### Automata theory
 
 > Different logical structures for solving problems.
 
-*An Introduction to Formal Languages and Automata 3rd Edition* , Class: B+
+*An Introduction to Formal Languages and Automata, 3rd Edition*, Class: B+
 
-*Introduction To Automata Theory Languages, and Computation* , Class: D, primer
+*Introduction To Automata Theory Languages, and Computation*, Class: TBD, primer
 
-## Computability theory
+### Computability theory
 
 > What is calculable with the current models of computers. Proofs developed by Alan Turing and others provide insight into the possibilities of what may be computed and what may not.
 
-## Computational complexity theory
+*Introduction to the Theory of Computation*, Class: A++, primer
+
+### Computational complexity theory
 
 > Fundamental bounds (especially time and storage space) on classes of computations.
 
-## Quantum computing theory
+*Computers and Intractability: A Guide to the Theory of NP-Completeness*, by Michael R. Garey, David S. Johnson, Class: C
+
+*The Nature of Computation*, Class: A, primer
+
+*Computational Complexity*, Class: A, primer
+
+### Quantum computing theory
 
 > Explores computational models involving quantum superposition of bits.
 
-*Quantum Computation and Quantum Information* , Class: C++, primer
+*Quantum Computation and Quantum Information*, Class: TBD, primer
+
+## Appendix. Programming Language Tutorial
+
+> Textbooks to learn a particular Programming Language efficiently.
+
+*An Introduction To Programming In Emacs Lisp, 2nd Edition*, Class: TBD
+
+*Core Java, 9th Edition*, by Cay S. Horstmann, Gary Cornell, Class: TBD
+
+*Fundamental Kotlin*, by Miloš Vasić, Class: TBD
+
+*JavaScript Programmer's Reference*, by Alexei White, Class: TBD
+
+*MATLAB Primer*, Class: TBD
+
+*ML for the Working Programmer*, by Lawrence C. Paulson, Class: TBD
+
+*On Lisp*, Class: TBD, advanced
+
+*Practical Common Lisp*, Class: TBD,
+
+*Programming Elixir 1.3*, Class: TBD
+
+*Programming in IDRIS, A Tutorial*, Class: TBD
+
+*Programming in Scala: A comprehensive Step-by-Step Scala Programming Guide*, by Martin Odersky, Lex Spoon, Bill Venners, Class: TBD
+
+*R for Data Science*, by Hadley Wickham, Class: TBD
+
+*Real World OCaml*, Class: TBD
+
+*Real World Haskell*, Class: TBD
+
+*Rust Essentials*, Class: TBD
+
+*The Art of Prolog, 2nd Edition*, Class: TBD
+
+*The C Programming Language*, by Brian W. Kernighan, Class: TBD
+
+*The Little Schemer, 4th Edition*, Class: TBD
+
+*The Scheme Programming Language, 4th Edition*, Class: TBD
+
+*The Seasoned Schemer*, Class: TBD
+
+*Verified Functional Programming in Agda*, by Aaron Stump, Class: TBD
