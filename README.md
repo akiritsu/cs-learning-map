@@ -1,5 +1,5 @@
 # 骑鹿人的计算机科学学习指南
-
+原文地址：http://cslearner.cn
 
 ## 本指南：
 - 汇集互联网上的**优质免费教材、视频资源**。
@@ -8,7 +8,7 @@
 - 帮助在学习计算机科学中感到迷茫的朋友们**寻找兴趣领域**。
 - 破除**快餐学习风气**和“IT门槛低”偏见。
 - 学习计算机的硬核小建议。
-- 去繁求简，避免单纯的平行资料堆叠，只选择最好最值得的书籍推荐。
+- 去繁求简，避免单纯的平行资料堆叠，只选择最好最值得的资源推荐。
 
 ## 基础教材、视频
 
@@ -29,26 +29,26 @@
     <td rowspan="5">基础必修</td>
     <td>编程入门（三选一）</td>
     <td><a href="https://book.douban.com/subject/30155590/">Python编程导论</a><br>Introduction to Computation and Programming Using Python<br><a href="https://book.douban.com/subject/1140942/">程序设计方法</a><br>How to Design Programs<br><a href="https://lotuc.gitbooks.io/plai-cn/content/">程序语言的应用和解释</a>（在线阅读）<br><a href="http://cs.brown.edu/courses/cs173/2012/book/index.html">Programming Languages: Application and Interpretation</a>（在线阅读）<br></td>
-    <td><a href="https://www.bilibili.com/video/av27987738">麻省理工学院</a>：<br><a href="https://www.bilibili.com/video/av27987738">计算机科学和Python编程导论</a><br><a href="https://www.bilibili.com/video/av27987738">（中英字幕）</a><br><br></td>
-    <td>学会基础的编程方法，拥有沉浸式地用编程解决问的环境。</td>
+    <td><a href="https://www.bilibili.com/video/av27987738">麻省理工：计算机科学和Python编程导论（中英字幕）</a><br><br></td>
+    <td>学会基础的编程方法，拥有使用编程语言和工具解决问题的能力。</td>
   </tr>
   <tr>
     <td>计算机架构</td>
     <td><a href="https://book.douban.com/subject/10441748/">计算机组成与设计</a><br>Computer Organization and Design<br></td>
     <td><a href="https://www.bilibili.com/video/av12666021">北京大学：计算机组成（中文无字）</a></td>
-    <td>基础的硬件知识大局观。理解计算机的结构，便于从机器角度思考分析问题。</td>
+    <td>基础的硬件知识大局观。理解计算机的结构，便于从机器角度思考分析现实问题。</td>
   </tr>
   <tr>
     <td>算法和数据结构</td>
     <td><a href="https://book.douban.com/subject/10432347/">算法</a><br>Algorithms</td>
     <td><a href="https://www.bilibili.com/video/av11928034">麻省理工学院：算法导论（中英字幕）</a></td>
-    <td>培养使用编程工具解决现实问题的能力，理解程序的设计方式和效率。重要程度五颗星。</td>
+    <td>培养使用编程工具解决实际问题的能力，理解程序的设计方式和效率。重要程度五颗星。</td>
   </tr>
   <tr>
     <td>计算机网络</td>
     <td><a href="https://book.douban.com/subject/26176870/">计算机网络：自顶向下方法</a><br>Computer Networking: A Top-Down Approach</td>
     <td><a href="https://www.bilibili.com/video/av11930774">斯坦福大学：计算机网络（中英字幕）</a><br></td>
-    <td>重要的知识基础。理解网络通讯的原理，便于多方面分析问题。</td>
+    <td>重要的知识基础。理解网络通讯的原理，便于多方面分析实际问题。</td>
   </tr>
   <tr>
     <td>操作系统</td>
@@ -69,11 +69,17 @@
     <td rowspan="2">高级编程技术</td>
     <td><a href="https://book.douban.com/subject/1148282/">计算机程序的构造和解释</a><br>Structure and Interpreter of Computer Programs</td>
     <td><a href="https://www.bilibili.com/video/av8515129">计算机程序的构造和解释（中英字幕）</a><br></td>
-    <td rowspan="2">编程还有很多东西哦～</td>
+    <td rowspan="2">编程还有很多东西要学哦～</td>
   </tr>
   <tr>
     <td><a href="https://book.douban.com/subject/5333562/">深入理解计算机系统</a><br>Computer Systems: A Programmer's Perspective</td>
     <td><a href="http://open.163.com/special/programming/">斯坦福大学：编程方法学（中英字幕）</a><br><br></td>
+  </tr>
+  <tr>
+    <td>离散数学</td>
+    <td><a href="https://book.douban.com/subject/26316200/">离散数学及其应用</a><br>Discrete Mathemtaics and Its Application</td>
+    <td><a href="https://www.bilibili.com/video/av23786148">麻省理工：计算机科学中地数学（英文字幕）</a></td>
+    <td>计算机科学通用数学基础。</td>
   </tr>
   <tr>
     <td>解决问题的数学<br></td>
@@ -94,12 +100,6 @@
     <td>理解分布式系统的应用和规则。此方面涉及很广，远非一本书一门课可以囊括。</td>
   </tr>
   <tr>
-    <td>离散数学</td>
-    <td><a href="https://book.douban.com/subject/26316200/">离散数学及其应用</a><br>Discrete Mathemtaics and Its Application</td>
-    <td><a href="https://www.bilibili.com/video/av23786148">麻省理工：计算机科学中地数学（英文字幕）</a></td>
-    <td>计算机科学通用数学基础。</td>
-  </tr>
-  <tr>
     <td>编程语言语用学</td>
     <td><a href="https://book.douban.com/subject/2152385/">程序设计语言-实践之路</a><br>Programming Language Pragmatics<br>Concepts, Techniques and Models of Computer Programming<br></td>
     <td><a href="http://open.163.com/special/opencourse/paradigms.html">斯坦福大学公开课：编程范式（中英字幕）</a><br><br></td>
@@ -112,49 +112,43 @@
     <td>更深层次的计算机科学数学基础。</td>
   </tr>
   <tr>
-    <td>热门领域</td>
+    <td rowspan="7">热门领域</td>
     <td>人工智能导论</td>
     <td><a href="https://book.douban.com/subject/25796281/">人工智能-一种现代的方法</a><br>Artificial Intelligence: An Modern Approach</td>
     <td><a href="https://www.bilibili.com/video/av39489278">伯克利：人工智能导论（英文无字幕）</a></td>
     <td></td>
   </tr>
   <tr>
-    <td></td>
     <td>机器学习</td>
     <td>Interpretable Machine Learning</td>
     <td><a href="https://www.bilibili.com/video/av9912938">吴恩达：机器学习（中英字幕）</a></td>
     <td></td>
   </tr>
   <tr>
-    <td></td>
     <td>深度学习</td>
     <td>Neural Networks and Deep Learning</td>
     <td><a href="https://www.bilibili.com/video/av35757082">李宏毅：深度学习理论（中文无字幕）</a></td>
     <td></td>
   </tr>
   <tr>
-    <td></td>
     <td>自然语言处理</td>
-    <td>语音与语言处理https://book.douban.com/subject/5373023/<br>Speech and Language Processing</td>
+    <td><a href="https://book.douban.com/subject/5373023/">语音与语言处理</a><br>Speech and Language Processing</td>
     <td><a href="https://www.bilibili.com/video/av41393758">斯坦福深度自然语言处理（中英字幕）</a></td>
     <td></td>
   </tr>
   <tr>
-    <td></td>
     <td>计算机图形学</td>
     <td><a href="https://book.douban.com/subject/2116178/">计算机图形学</a><br><a href="https://book.douban.com/subject/3829906/">Fundamentals of Computer Graphics</a></td>
     <td><a href="https://www.bilibili.com/video/av15129423">上海交通大学：计算机图形学（中文无字幕）</a><br></td>
     <td></td>
   </tr>
   <tr>
-    <td></td>
     <td>计算机视觉</td>
     <td><a href="https://www.amazon.com/Computer-Vision-Models-Learning-Inference/dp/1107011795/ref=sr_1_fkmrnull_1?keywords=Computer+Vision%3A+Models%2C+Learning%2C+and+Inference&qid=1555168755&s=books&sr=1-1-fkmrnull">Computer Vision: Models, Learning, and Inference</a></td>
     <td><a href="https://www.bilibili.com/video/av17741845">斯坦福大学：深度学习与计算机视觉（中文字幕）</a><br></td>
     <td></td>
   </tr>
   <tr>
-    <td></td>
     <td>自动推理</td>
     <td><a href="https://www.amazon.com/Certified-Programming-Dependent-Types-Introduction/dp/0262026651/ref=sr_1_fkmrnull_1?keywords=Certified+Programming+with+Dependent+Types&qid=1555168397&s=books&sr=1-1-fkmrnull">Certified Programming with Dependent Types</a></td>
     <td>暂无</td>
@@ -605,9 +599,9 @@ See: _Fuzzy Logic Theory and Applications: Part I and Part II_.
 - **Stucture:** The first section explains expert systems technologies while the second section focuses on applied examples in a wide variety of industries.
 - **涉及话题:** fuzzy systems, genetic algorithm development, machine learning, knowledge representation, and much more.
 
-## Networking and Security
+## 计算机网络和安全
 
-### Networking
+### 计算机网络
 
 > Algorithms and protocols for reliably communicating data across different shared or dedicated media, often including error correction.
 
@@ -617,7 +611,7 @@ See: _Fuzzy Logic Theory and Applications: Part I and Part II_.
 - Unique among computer networking texts, the Seventh Edition of the popular Computer Networking: A Top Down Approach builds on the author’s long tradition of teaching this complex subject through a layered approach in a “top-down manner.” The text works its way from the application layer down toward the physical layer, motivating readers by exposing them to important concepts early in their study of networking. Focusing on the Internet and the fundamentally important issues of networking, this text provides an excellent foundation for readers interested in computer science and electrical engineering, without requiring extensive knowledge of programming or mathematics. The Seventh Edition has been updated to reflect the most important and exciting recent advances in networking.
 - Free PDF Copy: http://ce.sharif.edu/courses/94-95/2/ce443-3/resources/root/Book/fqo47.Computer.Networking.A.TopDown.Approach.6th.Edition.pdf
 
-### Computer Security
+### 计算机安全
 
 > Practical aspects of securing computer systems and computer networks.
 
@@ -626,7 +620,7 @@ See: _Fuzzy Logic Theory and Applications: Part I and Part II_.
 - **适用人群:** _undergraduates_
 - In this indispensable, fully updated guide, Ross Anderson reveals how to **build systems that stay dependable whether faced with error or malice**. Here's straight talk on critical 涉及话题 such as technical engineering basics, types of attack, specialized protection mechanisms, security psychology, policy, and more.
 - Free PDF Copy: https://www.cl.cam.ac.uk/~rja14/musicfiles/manuscripts/SEv1.pdf
-### Cryptography
+### 密码学
 
 > Applies results from complexity, probability, algebra and number theory to invent and break codes, and analyze the security of cryptographic protocols.
 
@@ -635,9 +629,9 @@ See: _Fuzzy Logic Theory and Applications: Part I and Part II_.
 - **适用人群:** _undergraduates, professionals_
 - From the world's most renowned security technologist, Bruce Schneier, this 20th Anniversary Edition is the most definitive reference on cryptography ever published and is the seminal work on cryptography. Cryptographic techniques have applications far beyond the obvious uses of encoding and decoding information. For developers who need to know about capabilities, such as digital signatures, that depend on cryptographic techniques, there's no better overview than Applied Cryptography, the definitive book on the subject. Bruce Schneier covers general classes of cryptographic protocols and then specific techniques, detailing the inner workings of real-world cryptographic algorithms including the Data Encryption Standard and RSA public-key cryptosystems. The book includes source-code listings and extensive advice on the practical aspects of cryptography implementation, such as the importance of generating truly random numbers and of keeping keys secure.
 
-## Computer Architecture
+## 计算机组成和架构
 
-### Computer Architecture
+### 计算机架构
 
 > The design, organization, optimization and verification of a computer system, mostly about CPUs and Memory subsystem (and the bus connecting them).
 
@@ -654,7 +648,7 @@ See: _Fuzzy Logic Theory and Applications: Part I and Part II_.
 - Principles of Computer System Design is the first textbook to take a **principles-based approach to the computer system design**. It identifies, examines, and illustrates fundamental concepts in computer system design that are common across operating systems, networks, database systems, distributed systems, programming languages, software engineering, security, fault tolerance, and architecture. Through carefully analyzed case studies from each of these disciplines, it demonstrates how to apply these concepts to tackle practical system design problems. To support the focus on design, the text identifies and explains abstractions that have proven successful in practice such as remote procedure call, client/service organization, file systems, data integrity, consistency, and authenticated messages. Most computer systems are built using a handful of such abstractions. The text describes how these abstractions are implemented, demonstrates how they are used in different systems, and prepares the reader to apply them in future designs.
 - Free PDF Copy: https://ocw.mit.edu/resources/res-6-004-principles-of-computer-system-design-an-introduction-spring-2009/online-textbook/part_ii_open_5_0.pdf
 
-### Operating Systems
+### 操作系统
 
 > An operating system (OS) is system software that manages computer hardware and software resources and provides common services for computer programs.
 
@@ -676,7 +670,7 @@ See: _Fuzzy Logic Theory and Applications: Part I and Part II_.
 
 
 
-## Concurrent, Parallel, and Distributed Systems
+## 并行并发及分布式系统
 
 > The terms "concurrent computing", "parallel computing", and "distributed computing" have a lot of overlap, and no clear distinction exists between them.
 > In Wikipedia, **concurrent computing** is a form of computing in which several computations are executed during overlapping time periods—concurrently—instead of sequentially.
@@ -713,7 +707,7 @@ See: Distributed and Parallel Algorithms, Distributed Systems, Quantum Computing
 - **适用人群:** _professionals_
 - Free PDF Copy: https://homes.cs.washington.edu/~ruzzo/papers/limits.pdf
 
-### Distributed Systems
+### 分布式系统
 
 > Computing using multiple computing devices over a network to accomplish a common objective or task and thereby reducing the latency involved in single processor contributions for any task.
 
@@ -738,7 +732,7 @@ See: Distributed and Parallel Algorithms, Distributed Systems, Quantum Computing
   - Transactions, demonstrating the general applicability of concurrent composite operations.
   - Case Studies, considering different systems in the light of the perspective developed in the book: Classical UNIX; Linux, Solaris and Contemporary Unix; Extensible Systems; Windows 2000; Web Programming; Middleware; and Transaction Processing Systems.The Java language has been used throughout to illustrate object-oriented concepts, concurrent algorithms and distributed programming and the book includes a chapter on system security. The case studies, covering a full suite of professional operating systems, enable the course to be taught as a blend of theory and practice, so that on completion of the course a student is able to adapt and build real operating systems that function within a distributed environment.
 
-## Databases
+## 数据库
 
 [**Readings in Database Systems**](https://www.amazon.com/Readings-Database-Systems-MIT-Press/dp/0262693143/ref=sr_1_1?keywords=Readings+in+Database+Systems&qid=1555174259&s=books&sr=1-1), 4th Edition, 2005, Joseph M. Hellerstein, Michael Stonebraker
 
@@ -746,15 +740,15 @@ See: Distributed and Parallel Algorithms, Distributed Systems, Quantum Computing
 - Lessons from database research have been applied in academic fields ranging from bioinformatics to next-generation Internet architecture and in industrial uses including Web-based e-commerce and search engines. The core ideas in the field have become increasingly influential. This text provides both students and professionals with a grounding in **database research** and a technical context for **understanding recent innovations** in the field. The readings included treat the most important issues in the database area―the basic material for any DBMS professional.
 - Free E-book: http://www.redbook.io/
 
-### Data Mining
+### 数据挖掘
 
 > Study of algorithms for searching and processing information in documents and databases; closely related to information retrieval.
 
 See _Pattern Recognition and Machine Learning (PRML)_ and _The Elementes of Statistical Learning: Data Mining, Inference, and Prediction_.
 
-## Mathematics and Theory of Computation
+## 数学和计算理论
 
-### Mathematical Foundation of Programs
+### 程序的数学基础
 
 [**A Programmer's Introduction to Mathematics**](https://www.amazon.com/Programmers-Introduction-Mathematics-Dr-Jeremy/dp/1727125452/ref=sr_1_1?keywords=A+Programmer%27s+Introduction+to+Mathematics&qid=1555121297&s=gateway&sr=8-1), 2018, Jeremy Kun
 
@@ -812,7 +806,7 @@ Discrete mathematics is the study of mathematical structures that are fundamenta
 - This textbook is aimed at computer science undergraduates late in sophomore or early in junior year, supplying a comprehensive background in **qualitative and quantitative data analysis, probability, random variables,** and **statistical methods, including machine learning.**
 - **涉及话题:** simple point inference strategies including maximum likelihood and Bayesian inference, classification, regression, principal components analysis, clustering via agglomerative methods and k-means
 
-### Theory of Computation
+### 计算理论
 
 > The theory of computation is the branch that deals with how efficiently problems can be solved on a model of computation, using an algorithm. The field is divided into three major branches: automata theory and languages, computability theory, and computational complexity theory,
 
@@ -867,7 +861,7 @@ See also: Computablity Theory
 - **适用人群:** _professionals_
 - This text shows how to **recognize NP-complete problems** and offers practical suggestions for **dealing with them effectively**. It is suitable as a supplement to courses in algorithm design, computational complexity, operations research, or combinatorial mathematics, and as a text for seminars on approximation algorithms or computational complexity.
 
-### Mathematics for Data Science
+### 数据科学基础
 
 See also: Probability and Statistics.
 
@@ -878,7 +872,7 @@ See also: Probability and Statistics.
 - **涉及话题:** high-dimensional space, singular value decomposition, ramdom graphs, Markov chains, clustering, belief propagation, topic models, non-negative matrix factorization, hidden Markov Models and graphical models.
 - Free PDF Copy: https://www.cs.cornell.edu/jeh/book.pdf
 
-### Mathematical Logic
+### 数理逻辑
 
 > Mathematical logic is a subfield of mathematics exploring the applications of formal logic to mathematics. It bears close connections to metamathematics, the foundations of mathematics, and theoretical computer science.
 
@@ -1088,7 +1082,7 @@ See also: Probability and Statistics.
 - **适用人群:** _undergraduates_
 - An inductory lecture notes on model theroy.
 
-### Quantum Computing Theory
+### 量子计算理论
 
 > Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation.
 
@@ -1097,7 +1091,7 @@ See also: Probability and Statistics.
 - **适用人群:** _advanced undergraduates and graduates, professionals_
 - This comprehensive textbook describes such remarkable effects as **fast quantum algorithms, quantum teleportation, quantum cryptography and quantum error-correction**. Quantum mechanics and computer science are introduced before moving on to describe what a quantum computer is, how it can be used to solve problems faster than 'classical' computers and its real-world implementation. It concludes with an in-depth treatment of quantum information. Containing a wealth of figures and exercises, this well-known textbook is ideal for courses on the subject, and will interest beginning graduate students and researchers in physics, computer science, mathematics, and electrical engineering.
 
-### Coding Theory
+### 编码论
 
 > Coding theory is the study of the properties of codes and their respective fitness for specific applications. Codes are used for data compression, cryptography, error detection and correction, data transmission and data storage.
 
@@ -1112,7 +1106,7 @@ See also: Probability and Statistics.
 - **适用人群:** _advanced undergraduates and graduates_
 - **Information theory and inference**, often taught separately, are here united in one entertaining textbook. These 涉及话题 lie at the heart of many exciting areas of contemporary science and engineering - communication, signal processing, data mining, machine learning, pattern recognition, computational neuroscience, bioinformatics, and cryptography. This textbook introduces theory in tandem with applications. Information theory is taught alongside practical communication systems, such as arithmetic coding for data compression and sparse-graph codes for error-correction. A toolbox of inference techniques, including message-passing algorithms, Monte Carlo methods, and variational approximations, are developed alongside applications of these tools to clustering, convolutional codes, independent component analysis, and neural networks. The final part of the book describes the state of the art in error-correcting codes, including low-density parity-check codes, turbo codes, and digital fountain codes -- the twenty-first century standards for satellite communications, disk drives, and data broadcast.
 
-### Abstract Algebra
+### 抽象代数
 
 [**Abstract Algebra, The Basic Graduate Year**](https://faculty.math.illinois.edu/~r-ash/Algebra.html), 2002, Robert B. Ash
 
@@ -1120,9 +1114,9 @@ See also: Probability and Statistics.
 - This book covers **fundamental algebraic structures**, namely groups, rings, fields and modules, and maps between these structures.
 - Free PDF Copy: https://faculty.math.illinois.edu/~r-ash/Algebra.html
 
-## Programming Languages
+## 编程语言
 
-### Programming Language Pragmatics
+### 语用学
 
 > Taxonomy of programming languages, their strength and weaknesses. Various programming paradigms, such as object-oriented programming.
 
@@ -1137,7 +1131,7 @@ See also: Probability and Statistics.
 - **适用人群:** _undergraduates_
 - This book discusses the science and the technology of programming as a unified discipline that shows the **deep relationships between programming paradigms**. The book focuses on techniques of lasting value and explains them precisely in terms of a simple abstract machine. The book presents all major programming paradigms in a uniform framework that shows their deep relationships and how and where to use them together. After an introduction to programming concepts, the book presents both well-known and lesser-known computation models ("programming paradigms"). Each model has its own set of techniques and each is included on the basis of its usefulness in practice. The general models include declarative programming, declarative concurrency, message-passing concurrency, explicit state, object-oriented programming, shared-state concurrency, and relational programming. Specialized models include graphical user interface programming, distributed programming, and constraint programming. Each model is based on its kernel language―a simple core language that consists of a small number of programmer-significant elements. The kernel languages are introduced progressively, adding concepts one by one, thus showing the deep relationships between different models. The kernel languages are defined precisely in terms of a simple abstract machine. Because a wide variety of languages and programming paradigms can be modeled by a small set of closely related kernel languages, this approach allows programmer and student to grasp the underlying unity of programming. The book has many program fragments and exercises, all of which can be run on the Mozart Programming System, an Open Source software package that features an interactive incremental development environment.
 
-### Theory of Programming Language
+### 编程语言的理论基础
 
 > Design, implementation, analysis, characterization, and classification of programming languages and their individual features.
 
@@ -1167,7 +1161,7 @@ See also: Probability and Statistics.
 - **适用人群:** _professionals_
 - This book shows how **continuation-passing style** is used as an intermediate representation to **perform optimizations and program transformations**. Continuations can be used to compile most programming languages. The method is illustrated in a compiler for the programming language Standard ML. Prior knowledge of ML, however, is not necessary, as the author carefully explains each concept as it arises. This is the first book to show how concepts from the theory of programming languages can be applied to the production of practical optimizing compilers for modern languages like ML. All the details of compiling are covered, including the interface to a runtime system and garbage collector.
 
-### Compiler Theory
+### 编译器
 
 > Theory of compiler design, based on Automata theory.
 
@@ -1196,7 +1190,7 @@ See: Automata theory
 - **适用人群:** _graduates, professionals_
 - This comprehensive, up-to-date work examines **advanced issues in the design and implementation of compilers for modern processors**. Written for professionals and graduate students, the book guides readers in designing and implementing efficient structures for highly optimizing compilers for real-world languages. Covering advanced issues in fundamental areas of compiler design, this book discusses a wide array of possible code optimizations, determining the relative importance of optimizations, and selecting the most effective methods of implementation.
 
-### Formal Semantics
+### 形式语义
 
 > Rigorous mathematical study of the meaning of programs.
 
@@ -1220,7 +1214,7 @@ See: Automata theory
   - Part II is an introduction to the semantics of imperative languages with an emphasis on applications like compilers and program analysers. The distinguishing feature is that all the mathematics has been formalised in Isabelle and much of it is executable.
 - Free PDF Copy: http://www.concrete-semantics.org/concrete-semantics.pdf
 
-## Software Engineering
+## 软件工程
 
 > Software engineering is the application of engineering to the development of software in a systematic method.
 
@@ -1241,7 +1235,7 @@ See: Algorithm Analysis and Design.
 - **适用人群:** _freshmen, software engineers and practitioners_
 - This book addresses the topic of software design: how to **decompose complex software systems into modules** (such as classes and methods) that can be implemented relatively independently. The book first introduces the fundamental problem in software design, which is managing complexity. It then discusses philosophical issues about how to approach the software design process, and it presents a collection of design principles to apply during software design. The book also introduces a set of red flags that identify design problems. You can apply the ideas in this book to minimize the complexity of large software systems, so that you can write software more quickly and cheaply.
 
-### Formal Methods
+### 形式化方法
 
 > In computer science, specifically software engineering and hardware engineering, formal methods are a particular kind of mathematically based technique for the specification, development and verification of software and hardware systems.
 
@@ -1254,7 +1248,7 @@ See: _Logic in Computer Science: modelling and reasoning about systems_, _Princi
 - Free PDF Copy and Resources: http://adam.chlipala.net/frap/
 - Courses: https://frap.csail.mit.edu/main
 
-### Program Analysis and Verification
+### 程序分析和验证
 
 > The process of automatically analyzing the behavior of computer programs regarding a property such as correctness, robustness, safety and liveness. Program analysis focuses on two major areas: program optimization and program correctness.
 
@@ -1273,7 +1267,7 @@ See: _Logic in Computer Science: modelling and reasoning about systems_, _Princi
 - **适用人群:** _undergraduates_
 - This book is a comprehensive introduction to the **foundations of model checking**, a fully automated technique for finding flaws in hardware and software with extensive examples and both practical and theoretical exercises. The book begins with the basic principles for **modeling concurrent** and **communicating systems**, introduces different classes of properties (including safety and liveness), presents the notion of fairness, and provides **automata-based algorithms** for these properties. It introduces the **temporal logics LTL and CTL**, compares them, and covers algorithms for verifying these logics, discussing real-time systems as well as systems subject to random phenomena. Separate chapters treat such efficiency-improving techniques as abstraction and symbolic manipulation. The book includes an extensive set of examples (most of which run through several chapters) and a complete set of basic results accompanied by detailed proofs.
 
-## Programming Language Tutorial
+## 编程语言教程
 
 <!-- 21 books -->
 
