@@ -1,0 +1,167 @@
+.highlight table td { padding: 5px; }
+.highlight table pre { margin: 0; }
+.highlight {
+  color: #11a124;
+  background-color: black;
+}
+/* comment */
+.highlight .c, .highlight .cd, .highlight .cm, .highlight .c1, .highlight .cs {
+  color: #7D7E70;
+  font-style: italic;
+}
+.highlight .cp {
+  color: violet;
+  font-weight: bold;
+  font-style: italic;
+}
+.highlight .err {
+  color: #eeeeee;
+  background-color: #CC0000;
+}
+.highlight .gr {
+  color: #eeeeee;
+  background-color: #CC0000;
+}
+/* keyword */
+.highlight .k, .highlight .kd, .highlight .kv {
+  color: DarkTurquoise;
+}
+.highlight .o, .highlight .ow {
+  color: pink;
+}
+.highlight .p, .highlight .pi {
+  color: pink;
+}
+.highlight .gd {
+  color: #CC0000;
+}
+.highlight .gi {
+  color: #3FB34F;
+}
+.highlight .ge {
+  font-style: italic;
+}
+.highlight .gs {
+  font-weight: bold;
+}
+.highlight .gt {
+  color: #AE999E;
+  background-color: #766DAF;
+}
+.highlight .gl {
+  color: #AE999E;
+  background-color: #766DAF;
+}
+.highlight .kc {
+  color: #9f93e6;
+  font-weight: bold;
+}
+.highlight .kn {
+  color: #AE999E;
+  font-weight: bold;
+}
+.highlight .kp {
+  color: #AE999E;
+  font-weight: bold;
+}
+.highlight .kr {
+  color: #AE999E;
+  font-weight: bold;
+}
+.highlight .gh {
+  color: #AE999E;
+  font-weight: bold;
+}
+.highlight .gu {
+  color: #aaaaaa;
+  font-weight: bold;
+}
+.highlight .kt {
+  color: #EA8F5C;
+  font-weight: bold;
+}
+.highlight .no {
+  color: #EA8F5C;
+  font-weight: bold;
+}
+.highlight .nc {
+  color: #FAAF6C;
+  font-weight: bold;
+}
+.highlight .nd {
+  color: #FAAF6C;
+  font-weight: bold;
+}
+.highlight .nn {
+  color: #FAAF6C;
+  font-weight: bold;
+}
+.highlight .bp {
+  color: #FAAF6C;
+  font-weight: bold;
+}
+.highlight .ne {
+  color: #FAAF6C;
+  font-weight: bold;
+}
+.highlight .nl {
+  color: #9f93e6;
+  font-weight: bold;
+}
+.highlight .nt {
+  color: #9f93e6;
+  font-weight: bold;
+}
+.highlight .m, .highlight .mf, .highlight .mh, .highlight .mi, .highlight .il, .highlight .mo, .highlight .mb, .highlight .mx {
+  color: #9f93e6;
+  font-weight: bold;
+}
+.highlight .ld {
+  color: #9f93e6;
+  font-weight: bold;
+}
+.highlight .ss {
+  color: #9f93e6;
+  font-weight: bold;
+}
+.highlight .s, .highlight .sb, .highlight .sd, .highlight .s2, .highlight .sh, .highlight .sx, .highlight .sr, .highlight .s1 {
+  color: #fff0a6;
+  font-weight: bold;
+}
+.highlight .se {
+  color: #EA8F5C;
+  font-weight: bold;
+}
+.highlight .sc {
+  color: #EA8F5C;
+  font-weight: bold;
+}
+.highlight .si {
+  color: #EA8F5C;
+  font-weight: bold;
+}
+.highlight .nb {
+  font-weight: bold;
+}
+.highlight .ni {
+  color: #999999;
+  font-weight: bold;
+}
+.highlight .w {
+  color: #BBBBBB;
+}
+/* funtion delaration */
+.highlight .nf {
+    color: #912CAE;
+    font-weight: bold;
+}
+.highlight .py {
+  color: #912CAE;
+}
+.highlight .na {
+  color: #912CAE;
+}
+.highlight .nv, .highlight .vc, .highlight .vg, .highlight .vi {
+  color: #912CAE;
+  font-weight: bold;
+}

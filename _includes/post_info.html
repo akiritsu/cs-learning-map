@@ -1,0 +1,29 @@
+<div class="post_info">
+  <!-- author -->
+  {% if page.author %}
+  <span>
+    <i class="fa fa-user-secret"></i>
+    {{ page.author }}
+  </span>
+  {% endif %}
+  <!-- date -->
+  {% if page.date %}
+  <span>
+    <i class="fa fa-calendar"></i>
+    {{ page.date | date: "%b %d, %Y" }}
+  </span>
+  {% endif %}
+  <!-- category -->
+  {% if page.category %}
+  <span>
+    <i class="fa fa-archive"></i>
+    {{ page.category }}
+  </span>
+  {% endif %}
+</div>
+<!-- abstract -->
+<div class="abstract">
+  {% if page.abstract %}
+  <p>{{ page.abstract }}</p>
+  {% endif %}
+</div>

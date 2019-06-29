@@ -1,0 +1,51 @@
+{% if page.post_list == "date" %}
+<!-- list of articles: sort by date (by default) -->
+<h1 class="loa">计算机科学免费在线资源</h1>
+<table>
+    <thead>
+        <tr>
+            <th> 标题 </th>
+            <th> 日期 </th>
+            <th> 系列 </th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for post in site.posts %}
+          {% if page.finished != false %}
+        </tr>
+        <td class="td_title"><a href="{{post.url}}">{{post.title}}</a></td>
+        <td class="td_date">{{post.date | date: "%b %d, %y"}}</td>
+        <td class="td_category">{{post.category}}</td>
+        </tr>
+        {% endif %}
+        {% endfor %}
+    </tbody>
+</table>
+{% elsif page.post_list == "category" %}
+<!-- list of articles: sorted by category-->
+<h1>Post List, sorted by Category</h1>
+<table>
+{% for cate in site.categories %} 
+{% capture cate_name %}
+{{ cate | first }}
+{% endcapture %}
+<table id="t_{{ cate_name | slugzie }}">
+    <thead>
+        <tr>
+        <th id="cate_name"><i class="fa fa-tags"></i>{{ cate_name }}</th>
+        <th></th>  
+        </tr>
+    </thead>
+  <tbody>
+    {% for post in cate[1] %}
+    <tr>
+      <td class="td_title">
+        <a href="{{ post.url }}">{{ post.title }}</a>
+      </td>
+      <td class="td_date">{{ post.date | date: "%b %d, %y" }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+{% endfor %}
+</table>
+{% endif %}

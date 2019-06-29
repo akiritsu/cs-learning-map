@@ -1,0 +1,22 @@
+## Settings
+title: 骑鹿人的计算机科学自学指南
+owner: "DeerRIDER"
+# url: "bcqlr.com"
+baseurl: ""
+# baseurl: "/pRoJEct-NeGYa"
+permalink: /:title/
+description: ""
+markdown: kramdown
+webrick:
+  headers:
+    Access-Control-Allow-Origin: "*"
+## Global Variables
+email: "akiritsu@outlook.com"
+github: "akiritsu/cslearner.cn"
+# path to: css/, fonts/, img/ and js/
+assets_path: "/assets" # i.e. "/assets" 
+statement: "Designed by DeerRIDER, All Rights Reserved"
+# default max toc levels: 1 - 6 (h1 - h6)
+toc_level: 3
+# texts randomly displayed in background
+bgtext: "αβγδεζηθικλμνξοπρστυφχψω∷∫∮∝∞∧∨∑∏∪∩∈∵∴⊥‖∠⌒⊙≌∽√"
