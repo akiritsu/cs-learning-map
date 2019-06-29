@@ -102,7 +102,7 @@
 <div class="div_toc toc" id="popup_toc">
   {% if page.toc_level %} {% assign toclv = page.toc_level %} {% elsif
   site.toc_level %} {% assign toclv = site.toc_level %} {% else} {% assign toclv
-  = 3 %} {% endif %} {% include toc.html html=page sanitize=true class="ul_toc"
+  = 3 %} {% endif %} {% include toc.html html=content sanitize=true class="ul_toc"
   id="ul_toc" h_min=1 h_max=toclv %}
 </div>
 <!-- toggle toc -->

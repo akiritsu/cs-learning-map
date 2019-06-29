@@ -1,12 +1,11 @@
 {% if page.post_list == "date" %}
 <!-- list of articles: sort by date (by default) -->
-<h1 class="loa">计算机科学免费在线资源</h1>
+<!-- <h1 class="loa">计算机科学免费在线资源</h1> -->
 <table>
     <thead>
         <tr>
             <th> 标题 </th>
-            <th> 日期 </th>
-            <th> 系列 </th>
+            <th> 更新日期 </th>
         </tr>
     </thead>
     <tbody>
@@ -15,7 +14,6 @@
         </tr>
         <td class="td_title"><a href="{{post.url}}">{{post.title}}</a></td>
         <td class="td_date">{{post.date | date: "%b %d, %y"}}</td>
-        <td class="td_category">{{post.category}}</td>
         </tr>
         {% endif %}
         {% endfor %}

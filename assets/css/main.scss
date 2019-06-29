@@ -23,7 +23,7 @@ $font-size-h3: 21px;
 $font-size-h4: 21px;
 $font-size-h5: 19.5px;
 $font-size-h6: 16px;
-$font-size-primary: 18.5px;
+$font-size-primary: 18px;
 $font-smaller: 88%;
 $font-bigger: 108%;
 $blk-duration: 1.2s;
@@ -158,14 +158,15 @@ $blk-timing-function: cubic-bezier(0.98, -0.23, 0.65, 0.7);
           thead {
             th {
               padding: 10px 10px;
-              font-size: $font-bigger;
+              font-size: $font-smaller;
+              border: 1.3px solid rgba($color-primary, 0.7);          }
             }
-            border-top: 1.3px solid rgba($color-primary, 0.7);
-            border-bottom: 1px solid rgba($color-primary, 0.4);
-          }
+            
           tbody {
             td {
               padding: 8px 10px;
+              font-size: $font-smaller;
+              border: 1px solid rgba($color-primary, 0.4);
             }
             border-bottom: 1.3px solid rgba($color-primary, 0.7);
             .td_title {
@@ -197,7 +198,7 @@ $blk-timing-function: cubic-bezier(0.98, -0.23, 0.65, 0.7);
     }
     // scroll bar
     .div_article::-webkit-scrollbar {
-      width: 2px;
+      width: 4px;
     }
     .div_article::-webkit-scrollbar-thumb {
       background-color: $color-primary;
