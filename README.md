@@ -1,5 +1,5 @@
 # 骑鹿人的计算机科学学习指南
-原文地址：http://cslearner.cn QQ交流群：296867034
+
 
 ## 本指南：
 - 汇集互联网上的**优质免费教材、视频资源**。
@@ -1369,6 +1369,4 @@ Agda
 
 - **Verified Functional Programming in Agda**, Aaron
 
-## 一些值得关注的顶会期刊
-
-待更新～在调查收集呢～
+原文地址：http://cslearner.cn QQ交流群：296867034
