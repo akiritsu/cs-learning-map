@@ -2,7 +2,7 @@
 title: 骑鹿人的计算机科学自学指南
 owner: "DeerRIDER"
 url: ""
-baseurl: ""
+baseurl: "/cslearner.cn"
 # baseurl: "/pRoJEct-NeGYa"
 permalink: /:title/
 description: ""
