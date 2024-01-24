@@ -1,8 +1,8 @@
 ## Settings
-title: 骑鹿人的计算机科学自学指南
+title: 计算机科学自学地图
 owner: "DeerRIDER"
 url: ""
-baseurl: "/cslearner.cn"
+baseurl: "/cs-learning-map"
 # baseurl: "/pRoJEct-NeGYa"
 permalink: /:title/
 description: ""
@@ -12,7 +12,7 @@ webrick:
     Access-Control-Allow-Origin: "*"
 ## Global Variables
 email: "akiritsu@outlook.com"
-github: "akiritsu/cslearner.cn"
+github: "akiritsu/cs-learning-map"
 # path to: css/, fonts/, img/ and js/
 assets_path: "/assets" # i.e. "/assets" 
 statement: "Designed by DeerRIDER, All Rights Reserved"
