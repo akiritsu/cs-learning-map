@@ -81,7 +81,7 @@ Python 是当前最炙手可热的编程语言，其设计注重简洁、可读�
 **【资源】Python Share**[#主页](https://github.com/Yixiaohan/codeparkshare)
   - Python初学者书籍、视频、资料、社区推荐。
 
-**【资源】Python 资料汇总**[#主页](https://github.com/iamjoel/python-learn#%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%
+**【资源】Python 资料汇总**[#主页](https://github.com/iamjoel/python-learn#%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%)
 
 ### Scheme
 
