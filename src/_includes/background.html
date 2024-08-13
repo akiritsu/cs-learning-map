@@ -15,9 +15,9 @@ var drops = [];
 for (var x = 0; x < columns; x++) drops[x] = 1;
 
 function draw() {
-  ctx.fillStyle = "rgba(0, 0, 0, 0.05)";
+  ctx.fillStyle = "rgba(0, 0, 0, 0.03)";
   ctx.fillRect(0, 0, c.width, c.height);
-  ctx.fillStyle = "#490";
+  ctx.fillStyle = "#6d0";
   ctx.font = font_size + "px arial";
   for (var i = 0; i < drops.length; i++) {
     var text = txts[Math.floor(Math.random() * txts.length)];

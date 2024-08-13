@@ -1,6 +1,6 @@
 ---
 layout: default
-post_list: "date"
+collection_list: false
 toc: true
 home_btn: true
 btn_text: true
