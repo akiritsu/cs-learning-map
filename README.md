@@ -1,6 +1,6 @@
-# （尝试成为）计算机科学学习地图
+# （尝试成为）计算机科学自学地图
 
-当前版本：v0.9内部版本
+当前版本：给表妹写的 v1.2
 
 ## 关于本文
 
@@ -21,7 +21,7 @@
 
 不妨在学习这些内容时再来回看本文，逐步开拓视野，探索`支线任务`。
 
-> 本文中所列出的书籍，虽然有免费盗版书网站提供电子版，如 Z-Library、Library Genesis、Anna’s Archive 等网站，但请注意下载行为可能在您的国家被定义为违反法律，有能力请从正规途径获取。再次声明，虽然有上面那些`免`**费**`网`**站**提供了`免`**费**`电`**子**`书`，但请尊重知识产权、保护作者权益！
+> 本文中所列出的书籍，虽然有免费盗版书网站提供电子版，如 Z-Library、Library Genesis、Anna’s Archive 等网站，但请注意下载行为可能在您的国家被定义为违反法律，有能力请从正规途径获取。再次声明，虽然有上面那些`免`**费**`网`**站**提供了`免`**费**`电`**子**`书`，但尊重知识产权、保护作者权益是每个读者的义务！
 
 > 加★的资源为重点推荐资源，其共同点为“适合自学的必读课程”。
 
@@ -58,11 +58,13 @@
 
 另外一个令人哭笑不得的蠢事是：编程语言已经形成了各种宗教教派（多么讽刺！用愚昧无知的宗教迷信去敬拜人类科技中的瑰宝）。时下 Python 的教徒最多，他们因为人工智能应用的泛用而获得了莫大优越感，攻击其他语言赶不上潮流（人工智能绝非 Python 独享）。C 语言的信众是最古老的，他们的兴起仅仅是因为恰巧——Unix 恰巧变得流行，Unix 恰巧是用 C 语言编写而成。
 
-人类发明了数千种编程语言，似乎永远也学不完——但事实是，其实**只有四种编程语言的“思想”**（严格来说，是范式 Paradigm），也就是人类操控计算机有四种思想；**同类编程语言之间的差异极小**，比东北话和北京话、利物浦口音和伦敦腔差距更小（前提是，你透彻地理解了编程语言的本质）。这四类是：`命令式编程`、`面向对象编程`、`函数式编程`、`逻辑式编程`。
+人类发明了数千种编程语言，似乎永远也学不完——但事实是，**其实（主要）只有四种编程语言的“思想”**（严格来说，是范式 Paradigm），也就是人类操控计算机有四种思想；**同类编程语言之间的差异极小**，比东北话和北京话、利物浦口音和伦敦腔差距更小（前提是，你透彻地理解了编程语言的本质）。这四类是：`命令式编程`、`面向对象编程`、`函数式编程`、`逻辑式编程`。
 
 **这四种编程范式，才是最核心的组织计算机程序的方法，是每一个程序开发人员需要深刻理解的思想**（而不是泡在层出不穷的新语言的汪洋大海中）；编程语言固然重要，但是也只是这四种思维的表达形式、是外表而非筋骨（这也是为什么中文编程毫无意义，编程的真正语言是高度抽象的数学语言，而而非英文或者中文）。现代编程语言总是想给你很大的自由（大部分语言是多范式的），所以**只要去学就好了，你永远可以十分轻松地从一门编程语言切换到另外一门。**
 
 与其挑剔编程语言，不如选取更容易理解的公开课和教程。以下是非常适合入门的编程语言学习资源。
+
+> **不要重语法，轻程序设计**——许多编程入门课程都着重于讲清楚一门编程语言的语法、许多初学者都在编程语言稀奇古怪的语法上下大功夫，这是一个超级巨大的错误。程序设计的方法和思路，远比语法重要，应该作为初学者的重点。在斯坦福大学教授“编程方法学”的 Mehran Sahami 曾经说过“很多计算机专业的同学会走入误区，（认为）仅仅学习语言本身特性，只要学好了语言，就能成为一个好的软件工程师。他们过于关注语言本身的细节，对程序设计却没有宏观把握。后来出现了一位叫 Rich Pattis 的人，他当时是一名斯坦福的研究生，他说，“给同学们教授计算机科学入门课程，能不能先把各种语言的繁杂指令、和各种语言的差异放一边，先从最简单的教起，以便学生能更快的学习各种指令，这样，大家就具备了掌握程序设计语言的基本素养，可以把主要精力放在软件工程思想方面。事实证明这个想法很天才，已经被广泛接受。”
 
 ### Python
 
@@ -79,7 +81,7 @@ Python 是当前最炙手可热的编程语言，其设计注重简洁、可读�
   - MIT6.001 的配套教材，由 MIT 教授结合课堂实践亲自编写。涉及了很多个主题，包括一些经典算法、统计学、蒙特卡罗模拟、机器学习，但都浅尝辄止。中文翻译质量稍差，有能力直接学英文。
 
 **【资源】Python Share**[#主页](https://github.com/Yixiaohan/codeparkshare)
-  - Python初学者书籍、视频、资料、社区推荐。
+  - Python 初学者书籍、视频、资料、社区推荐。
 
 **【资源】Python 资料汇总**[#主页](https://github.com/iamjoel/python-learn#%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%)
 
@@ -119,19 +121,29 @@ Haskell是一种纯函数式编程语言，具有强大的类型系统和高级�
 **【课程】Havard CS50: 非计算机专业如何理解计算机技术 Understanding Technology** [#哔哩哔哩-中英字幕](https://www.bilibili.com/video/BV1ZK4y1q7Vc) [#课程主页](https://cs50.harvard.edu/technology)
   - 这门课程适合那些尚未将自己视为计算机专业人士的学生。针对每天使用技术工作但不一定了解其底层工作原理或在出现问题时如何解决的学生，该课程填补了这些空白，使学生能够更有效地使用和解决技术问题。通过关于硬件、互联网、多媒体、安全、编程和网站开发的讲座，以及对当前事件的阅读，该课程为学生提供了应对当今技术并为未来做准备的能力。
 
-【课程】 **计算机科学速成课 Crash Course Computer Science** [#哔哩哔哩-中英字幕](https://www.bilibili.com/video/BV1EW411u7th) [#油管](https://www.youtube.com/playlist?list=PL8dPuuaLjXtNlUrzyH5r6jN9ulI)
+ **【课程】计算机科学速成课 Crash Course Computer Science** [#哔哩哔哩-中英字幕](https://www.bilibili.com/video/BV1EW411u7th) [#油管](https://www.youtube.com/playlist?list=PL8dPuuaLjXtNlUrzyH5r6jN9ulI)
   - 简单地介绍了计算机科学的发展历史和一些关键概念。使用了较多的专有名词，探讨了很多核心的概念，对于初学者来说有一定的理解难度。
+
+**【书籍】计算机：一部历史 Digitized: The Science of Computers and How It Shapes Our World** [#豆瓣](https://book.douban.com/subject/25802176/)
+  - 给大众读者写的计算机科普读物，零门槛入门计算机科学。讲述计算机背后鲜为人知的故事，普及关于计算机和互联网，你不得不了解的知识。
 
 **【书籍】计算机科学导论 Foundations of Computer Science** [#豆瓣](https://book.douban.com/subject/35084853/) [#啊玛粽](https://www.amazon.com/Foundations-Computer-Science-Behrouz-Forouzan/dp/1473751047/ref=sr_1_3?dib=eyJ2IjoiMSJ9.3B0heCaDCPYb5rFihSgPs9ciwfIfEhd6fT6XMr08BHDb1OCU-QnXExNBeHOhsfzEGgMkzS-Snqi88PzybV_R-axz_bH9wxSOPl_sorUXPNcIOKzLq7I6nPHYkG6q1Fg1TLpjibzWnD7lf7Gmtn5h_mVEPx3Iz0xNItrJXCz6BclsksOkPH7LUeEeQYn8sjxdAw8gQgHOlgS2HbdRrBZ39gjtfRv2mZg2HA2AIiL8gvM.S1IASXcJDv5gVUiC6L9k2G07XxVMYBOoQlqPko0HrYs&dib_tag=se&keywords=Foundations+of+Computer+Science&qid=1705368136&s=books&sr=1-3)
   - 一本百科全书式的计算机专业基础入门读物，书中涉及计算机科学的方方面面。虽然读者对象是计算机专业的学生，但这本书深入浅出，引人入胜，勾画出计算机科学体系的框架。
 
 看一些很好的科普视频和文章，对于培养兴趣、了解计算机的历史、找到学计算机的感觉非常有帮助。在各大视频网站上有大量科普视频，在闲暇时搜索观看即可。
 
-**计算机科学地图** [#哔哩哔哩-中英字幕](https://www.bilibili.com/video/BV1WH4y1B7Af/) [#油管](https://www.youtube.com/watch?v=SzJ46YA_RaA)
+**【书籍】黑客与画家:来自计算机时代的高见** [#豆瓣](https://book.douban.com/subject/25724948/)
+  - 硅谷创业之父 Paul Graham 的文集，主要介绍黑客即优秀程序员的爱好和动机，讨论黑客成长、黑客对世界的贡献以及编程语言和黑客工作方法等所有对计算机时代感兴趣的人的一些话题。
 
-**两座塔的故事 Theory of Computation: A Tale of Two Towers** [#哔哩哔哩](https://www.bilibili.com/video/BV1z94y1T7LC) [#油管](https://youtu.be/ruOnPmI_40g)
+**【科普】计算机科学地图** [#哔哩哔哩-中英字幕](https://www.bilibili.com/video/BV1WH4y1B7Af/) [#油管](https://www.youtube.com/watch?v=SzJ46YA_RaA)
 
-**代码美学 Code Aesthetic** [#哔哩哔哩](https://space.bilibili.com/1629390/channel/collectiondetail?sid=1068921)
+**【科普】两座塔的故事 Theory of Computation: A Tale of Two Towers** [#哔哩哔哩](https://www.bilibili.com/video/BV1z94y1T7LC) [#油管](https://youtu.be/ruOnPmI_40g)
+
+**【科普】代码美学 Code Aesthetic** [#哔哩哔哩](https://space.bilibili.com/1629390/channel/collectiondetail?sid=1068921)
+
+**【科普】硬件茶谈 带你认识 CPU & 硬核科普** [#哔哩哔哩](https://space.bilibili.com/14871346/channel/collectiondetail?sid=153373) [#哔哩哔哩](https://space.bilibili.com/14871346/channel/collectiondetail?sid=550815)
+
+> 不要急功近利——你可以从“科普”“奶头乐”开始，不需要一开始就给自己“上强度”。只要沉浸进去就会发现，计算机科学真的很有趣，兴趣可以推动你走下去。
 
 ## 核心基础
 
@@ -231,7 +243,7 @@ Haskell是一种纯函数式编程语言，具有强大的类型系统和高级�
   - 本书卷帙浩繁，并非系统性自学的首选，而是作为百科全书式的算法分析工具书而存在；其最有价值的部分则是本书的大量的高质量习题。
 
 **【资源】** [#主页](https://the-algorithms.com/) [#Python实现](https://github.com/TheAlgorithms/Python)
-  - 印度资深工程师发起的算法实现教学项目，使用
+  - 印度资深工程师发起的算法实现教学项目，使用 40 种语言实现计算机常见算法的教学项目。
 
 ### 数据库系统 Database Systems
 
@@ -323,6 +335,7 @@ Haskell是一种纯函数式编程语言，具有强大的类型系统和高级�
 
 **★【课程】MIT 18.06 Linear Algebra** [#哔哩哔哩-中英字幕](https://www.bilibili.com/video/BV1zx411g7gq/) [#课程主页](https://ocw.mit.edu/courses/mathematics/18-06sc-linear-algebra-fall-2011/syllabus/) [#课程笔记](https://github.com/apachecn/mit-18.06-linalg-notes)
   - 地球上最好的线性代数课程，配套教材为 Gibert Strang 编写的《线性代数》。
+  - Kenji Hiranabe 根据教材编写的图解笔记：[#Github](https://github.com/kenjihiranabe/The-Art-of-Linear-Algebra)
 
 **【书籍】线性代数 Introduction to Linear Algebra** [#豆瓣](https://book.douban.com/subject/34820335/)
   - Gibert Strang 编写的教材，本书内容包括行列式、矩阵、线性方程组与向量、矩阵的特征值与特征向量、二次型及Mathematica软件的应用等。每章都配有习题，书后给出了习题答案。本书在编写中力求重点突出、由浅入深、通俗易懂，努力体现教学的适用性。
@@ -409,6 +422,10 @@ Haskell是一种纯函数式编程语言，具有强大的类型系统和高级�
 **★【课程】UC Berkeley CS61A: Computer Programs** [#哔哩哔哩-中英字幕](https://www.bilibili.com/video/BV1v64y1Q78o) [#课程主页](https://inst.eecs.berkeley.edu/~cs61a/sp21/)
   - MIT SICP 课程的现代版本，使用 Python 语言教学。 
   - Brian Harvey 在 2011spring 第一节课的开场白是：“这里是cs61a，世界上最好的计算机课。”接着他又说道：“并不是因为我，而是因为我们用的教材——《计算机程序的构造与解释》。”
+
+**【课程】Stanford CS106a: Programming Methodology**  [#哔哩哔哩-中英字幕](https://www.bilibili.com/video/BV1zs411h7t8）[#课程主页](https://see.stanford.edu/Course/CS106A)
+  - 在线课件及IDE: [#Stanford Karel](https://stanford.edu/~cpiech/karel/learn.html)
+  - 非常细致地以 Java 语言讲解了编程思想。
 
 **【书籍】程序设计语言-实践之路 Programming Language Pragmatics** [#豆瓣](https://book.douban.com/subject/2152385/)
   - 这是一本很有特色的教材，其核心是讨论程序设计语言的工作原理和技术。本书融合了传统的程序设计语言教科书和编译教科书的有关知识，并增加了一些有关汇编层体系结构的材料，以满足没学过计算机组织的学生们的需要。书中通过各种语言的例子，阐释了程序设计语言的重要基础概念，讨论了各种概念之间的关系，解释了语言中许多结构的形成和发展过程，以及它们演化为今天这种形式的根源。书中还详细讨论了编译器的工作方式和工作过程，说明它们对源程序做了什么，以及为什么要那样做。书的每章最后附有复习题和一些更具挑战性的练习。这些练习的特别价值在于引导学生进一步深入理解各种语言和技术。本书第2版新增了脚本语言问题的讨论，涵盖 Perl、Python、Ruby、Tcl、PHP、JavaScript、XSLT 等和其他语言。
@@ -919,16 +936,77 @@ Scala 是一种多范式的编程语言（支持`面向对象`和`函数式编�
   - 配置管理（Configuration Management）：确保软件系统的各个版本和组件能够被追踪、控制和管理，以确保系统的稳定性。
   - 软件工程伦理与法律（Software Engineering Ethics and Legal Issues）：探讨在软件开发和使用中涉及的道德和法律问题。
 
-**【课程】UC Berkeley CS169: Software Engineering** [Bilibili]https://www.bilibili.com/video/BV1VJ41197Nq/ [#配套教材](https://github.com/PKUFlyingPig/CS169-Software-Engineering/blob/master/saasbook.pdf)
+**【课程】UC Berkeley CS169: Software Engineering** [#哔哩哔哩-无字幕](https://www.bilibili.com/video/BV1VJ41197Nq/) [#配套教材](https://github.com/PKUFlyingPig/CS169-Software-Engineering/blob/master/saasbook.pdf)
   - 这门课采用近些年流行起来的小团队快速迭代（Agile Develepment）开发模式以及利用云平台的 SAAS 服务模式。
+
+### 移动应用开发 Mobile Application Development
+
+移动应用开发是为智能手机、平板电脑和数字助理制作软件的过程，最常见的是针对 Android 和 iOS 操作系统。这些应用可以提供各种功能和服务，从社交媒体和游戏到生产力工具和电子商务应用。软件可预装在设备上，可从移动应用商店下载，也可以通过移动 Web 浏览器来访问。
+
+> 移动应用开发、桌面应用开发、网站开发都需要培养一系列相辅相成的开发能力——统称为`技术栈`（Tech Stack）。具体来说，就是在开发中所使用的**一组技术、工具和框架的组合**。在生产实践中，往往可以由一个团队合作，每个个体只参与其中的一环；但也有很多人通晓开发的整个步骤，并有很高的效率，这些人被称为“全栈工程师”（Full Stack Engineer）。全栈工程师有能力参与从应用程序的用户界面设计到服务器端编程以及与数据库交互的整个开发过程。
+
+> 在生产实践中，不同应用都有一个特定的技术栈，其中的技术很可能并不先进、并非最优，而是过去时代的遗留。人类不可能全部掌握浩如烟海的这些技术、工具和框架（虽然具有很高的共通性）。所以在学习这部分内容时，掌握其涉及的基础技术（如 HTML/CSS、编程语言、数据库系统、计算机安全、测试和调试、用户界面设计等），并了解和学习一个典型的技术栈就足够了。
+
+**【课程】Stanford CS193p: Developing Apps for iOS**[#哔哩哔哩-2021](https://www.bilibili.com/video/BV1hY4y1M7Dd/) [#哔哩哔哩-2023](https://www.bilibili.com/video/BV1T84y1m7wv/) [#课程主页](https://cs193p.sites.stanford.edu)
+
+### 桌面应用开发 Desktop Application Development
+
+“桌面应用开发”是指为桌面操作系统（如 Windows、macOS 或 Linux）设计和创建应用程序的过程。与为移动设备或网页开发的应用程序不同，桌面应用通常具有更丰富的用户界面和功能，能够充分利用计算机的处理能力和资源。
+
+Windows 应用开发的主流技术（截至 2023）：
+  1. `.NET 6/7` 是一个由 Microsoft 开发的跨平台开发框架，支持 Windows、Linux 和 macOS。.NET 6和.NET 7（及其后续版本）提供了对桌面应用开发的全面支持，包括Web、云、移动、游戏以及物联网应用开发。支持多种编程语言（如C#、F#、Visual Basic），强大的类库，以及跨平台开发能力。特别是C#，作为一种现代、类型安全的编程语言，非常适合开发复杂的 Windows 桌面应用。
+  2. `Windows Presentation Foundation (WPF)` 是一个成熟的 UI 框架，用于开发 Windows 桌面应用。它提供了一个广泛的用户界面（UI）开发库，支持高度自定义的UI设计和丰富的图形功能。支持 XAML（一种基于XML的标记语言）来定义 UI 元素，使得开发者能够以声明方式设计图形界面。WPF适用于需要复杂UI和高度交互性的桌面应用。
+  3. `Universal Windows Platform (UWP)` 是 Microsoft 推出的一个用于开发跨 Windows 10 设备（包括 PC、平板电脑、手机、Xbox 等）的应用平台。它支持适应不同设备屏幕大小和分辨率的响应式布局。UWP 应用可以通过 Windows Store 分发，支持触摸操作、笔操作和语音输入等现代输入方式，以及 Windows 10 的安全性和更新机制。
+  4. `WinUI 3` 是 Windows UI 库的最新版本，为 UWP 和桌面应用（包括 Win32 和 .NET 应用）提供了一套丰富的UI控件和开发工具。WinUI 3 允许开发者创建现代、流畅的 Windows 应用，同时保持与现有应用和系统的兼容性。它是微软未来 Windows 应用开发的重点，支持最新的UI设计语言。
+  5. `Electron` 虽然不是专门针对 Windows 的开发技术，但它是一个流行的跨平台桌面应用开发框架，允许使用 Web 技术（HTML、CSS和JavaScript）开发桌面应用。Electron应用可以运行在Windows、macOS和Linux上。它特别适合Web开发者，因为可以让他们轻松将Web应用转换为桌面应用。
+  6. `MAUI (.NET Multi-platform App UI)` 是 .NET 6 引入的一个新框架，支持使用单一代码库开发跨平台的桌面和移动应用。MAUI 允许开发者利用 .NET 和 C# 开发Windows、macOS、iOS 和 Android 上的应用，是一个未来的主流开发趋势，特别适合需要跨平台支持的应用开发。
+
+Mac 应用开发的主流技术（截至 2023）：
+  1. `SwiftUI` 是 Apple在2019年推出的一个现代化UI框架，用于在 iOS、macOS、watchOS 和 tvOS 上构建用户界面。SwiftUI 使用声明式 Swift 语法，使得 UI 代码更加简洁、易读。SwiftUI 支持实时预览和交互式设计，极大地提高了开发效率。它允许开发者用较少的代码创建复杂且性能优化的UI，并且易于维护和更新。
+  2. `AppKit` 是为 macOS 应用开发而设计的一套成熟的 UI 框架，提供了丰富的控件库和界面元素，适用于传统的 macOS 桌面应用开发。
+技术特点：AppKit 深度集成了 macOS 的界面特性，支持多窗口、菜单栏、拖放等 macOS 特有的功能。它适用于需要深度定制 macOS 原生体验的复杂桌面应用。
+  3. `Swift` 是 Apple 开发的一种强类型、编译式编程语言，旨在开发 iOS、macOS、watchOS 和 tvOS 应用。Swift 设计旨在安全性和性能，并且提供了现代编程语言的特性，如闭包、元组、泛型等。Swift易于学习和使用，具有良好的性能和安全性，是开发Apple平台应用的首选语言。
+  4. `Objective-C` 是 Apple 平台上的传统编程语言，长期以来被用于 iOS 和 macOS 应用的开发。虽然 Swift 的出现使其逐渐被取代，但 Objective-C 仍然被广泛使用，特别是在维护旧项目时。Objective-C 具有动态运行时和成熟的生态系统。对于一些已有的大型项目或需要与旧代码库交互的新项目，Objective-C 依然是一个重要的选择。
+  5. `跨平台框架`如 Electron、Qt、Flutter 和 .NET MAUI 等。这些框架支持使用单一代码库开发跨平台的桌面应用，包括 macOS。
+
+Linux 应用开发的主流技术（截至 2023）：
+  1. `Qt` 是一个跨平台的 C++ 应用程序框架，广泛用于开发具有图形用户界面的应用程序，同时也用于开发非 GUI 程序，如控制台工具和服务器。Qt 支持强大的信号与槽机制，使得应用程序的不同组件之间的通信变得简单高效。它提供了一整套开发工具，包括一个集成开发环境（IDE），Qt Creator。
+  2. `GTK`（GIMP Toolkit）是另一个用于创建图形用户界面的开源跨平台工具包，原本为 GIMP 开发，现广泛用于 GNOME 桌面环境的应用程序开发。GTK 使用 C 语言编写，支持多种语言绑定，如 Python（通过PyGTK）、JavaScript（通过GJS）等，适用于快速开发 Linux 桌面应用。
+  3. `Electron` 是一个使用 Chromium 和 Node.js 开发桌面级应用程序的框架，允许开发者使用 Web 技术（HTML、CSS和JavaScript）创建跨平台的桌面应用。Electron应用可以运行在Linux、Windows和macOS上，它特别适合那些希望将现有Web应用转换为桌面应用的开发者。
+  4. `Docker` 是一个开源的应用容器引擎，允许开发者打包应用及其依赖项到一个可移植的容器中，然后发布到任何支持 Docker 的 Linux 机器上。Docker 容器化技术支持应用的快速部署、扩展和版本控制，非常适合云计算和微服务架构。
+  5. `Flutter` 是 Google 开发的一个开源UI软件开发工具包，用于从单一代码库开发跨平台的移动、Web 和桌面应用。Flutter 使用 Dart 语言，支持快速的开发周期和富动画的 UI 设计，近年来在跨平台移动和桌面应用开发中变得越来越流行。
+
+> 此条目涉及的技术、工具和框架多而繁杂，因而无法给出推荐课程和书目，请善用搜索引擎、在线网络资源和官方文档。其相关的技术基础，也不外乎前面所列的 5 门核心基础课程。
 
 ### 网站开发 Web Development
 
 “网站开发”课程通常涵盖设计、创建和维护网站的相关主题。这样的课程旨在为学生提供构建现代网站所需的技能，包括前端（用户界面和用户体验）和后端（服务器端）开发。
 
-**【课程】Stanford CS142: Web Applications** [#课程主页](https://web.stanford.edu/class/cs142/index.html) [课程视频](https://web.stanford.edu/class/cs142/lectures.html)
+**【课程】Stanford CS142: Web Applications** [#课程主页](https://web.stanford.edu/class/cs142/index.html) [#课程视频](https://web.stanford.edu/class/cs142/lectures.html)
 
 **【资源】前段技能树**[#Github](https://github.com/JacksonTian/fks)
+
+网页开发技术栈的**示例**：
+  - 前端技术栈
+    - HTML/CSS/JavaScript：构成网页开发的基础，任何网站或网页应用都会用到这三项技术。
+    - React：由 Facebook 开发的一个用于构建用户界面的 JavaScript 库。支持组件化开发，有助于构建大型应用，拥有丰富的生态系统和社区支持。
+    - Vue.js：一个渐进式 JavaScript 框架，用于构建用户界面。易于上手，轻量级，具有数据双向绑定的特性，社区活跃。
+    - Angular：由 Google 维护的一个开放源代码的 Web 应用框架。提供了一套完整的解决方案，适合构建大型、高性能的Web应用。
+    - Tailwind CSS：一个实用主义的 CSS 框架，用于快速构建自定义设计的界面。强调直接在HTML中使用类，避免编写 CSS，提高开发效率。
+  - 后端技术栈
+    - Node.js：一个基于 Chrome V8 引擎的 JavaScript 运行时，使得 JavaScript 可以用于后端开发。支持非阻塞 I/O，适合处理高并发请求，拥有庞大的npm包管理器。
+    - Django (Python)：一个高级的 Python Web 框架，鼓励快速开发和干净、实用的设计。包含了构建 Web 应用所需的几乎所有功能，强调代码复用。
+    - Ruby on Rails (Ruby)：一个使用 Ruby 语言的服务器端 Web 应用框架。遵循“约定优于配置”的原则，使得 Web 应用的开发变得更快更简单。
+    - Spring Boot (Java)：一个简化 Spring 应用开发的框架，旨在快速、轻松地构建独立的、生产级别的 Spring 基础的应用。简化配置，快速启动和部署，广泛用于企业级应用开发。
+    - ASP.NET Core (C#)：一个开源的、跨平台的高性能框架，用于构建现代的、云基础的、联网的应用。支持 Windows、Linux 和 macOS，可用于开发高性能Web应用和服务。
+  - 数据库技术
+    - SQL 数据库：如 MySQL、PostgreSQL 和 Microsoft SQL Server，适用于结构化数据存储。
+    - NoSQL 数据库：如 MongoDB、Cassandra 和 Redis，适用于非结构化数据或需要高扩展性的场景。
+  - 开发工具和平台
+    - 版本控制：Git，GitHub/GitLab/Bitbucket 等。
+    - 容器化：Docker，Kubernetes 等。
+    - 持续集成/持续部署：Jenkins，Travis CI，GitHub Actions 等。
+    - 云服务平台：AWS，Google Cloud Platform，Microsoft Azure 等。
 
 ### 计算机安全与密码学 Computer Security and Cryptography
 
@@ -1165,6 +1243,10 @@ Scala 是一种多范式的编程语言（支持`面向对象`和`函数式编�
 ### 数理逻辑 Mathematical Logic
 
 数理逻辑是数学和哲学的交叉领域，研究形式系统和推理规则。它涉及了数学中的逻辑结构和命题关系，以及通过形式系统进行合理推理的原理。数理逻辑的应用涉及到计算机科学、哲学、语义学、数学基础等多个领域。它为理解和形式化推理提供了一种严密的框架，对于发展计算机科学和推理技术都具有重要意义。
+
+
+**【书籍】Beginning Mathematical Logic: A Study Guide** [#电子书](https://www.logicmatters.net/resources/pdfs/LogicStudyGuide.pdf)
+  - Peter Smith 教授为自学数理逻辑而编写的教程。
 
 **【书籍】Modern Mathematical Logic**
   - 这教材提供了对数学逻辑的完整且现代的介绍。作者在整个教材中使用当代的符号、约定和观点，并强调与数学的其他领域的交互。除了涵盖数学逻辑的基本概念和完备性、紧致性、不完备性的基本内容外，它还大量介绍了现代学科的基石：模型理论、集合论和可计算性理论。
@@ -1437,6 +1519,9 @@ Lambda 演算的一个关键特征是匿名函数（anonymous functions）。函
 **免费的编程中文书籍索引**[#主页](https://github.com/justjavac/free-programming-books-zh_CN)
 
 **免费编程书籍** [#主页](https://ebookfoundation.github.io/free-programming-books/) [#Github](https://github.com/EbookFoundation/free-programming-books)
+
+**Logic Matters** [#主页](https://www.logicmatters.net/)
+
 
 ### 练习项目篇
 
