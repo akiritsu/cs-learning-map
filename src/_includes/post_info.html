@@ -7,7 +7,7 @@
   </span>
   {% endif %}
   <!-- date -->
-  {% if page.date %}
+  {% if page.show_date %}
   <span>
     <i class="fa fa-calendar"></i>
     {{ page.date | date: "%b %d, %Y" }}
@@ -22,8 +22,8 @@
   {% endif %}
 </div>
 <!-- abstract -->
+{% if page.abstract %}
 <div class="abstract">
-  {% if page.abstract %}
   <p>{{ page.abstract }}</p>
-  {% endif %}
 </div>
+{% endif %}

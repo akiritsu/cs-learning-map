@@ -1,0 +1,132 @@
+<div class="footer">
+  <nav class="nav_bar">
+    <ul class="footer_owner_info">
+      <!-- email -->
+      {% if site.email %}
+      <a class="footer_btn" href="mailto://{{ site.email }}">
+        <i class="fa fa-envelope-square">
+          {% if page.btn_text != false %}
+          <p>Email</p>
+          {% endif %}
+        </i>
+      </a>
+      {% endif %}
+      <!-- linkedin -->
+      {% if site.linkedin %}
+      <a
+        class="footer_btn"
+        href="https://www.linkedin.com/in/{{ site.linkedin }}"
+      >
+        <i class="fa fa-linkedin">
+          {% if page.btn_text != false %}
+          <p>LinkedIn</p>
+          {% endif %}
+        </i>
+      </a>
+      {% endif %}
+      <!-- github -->
+      {% if site.github %}
+      <a class="footer_btn" href="https://github.com/{{ site.github }}">
+        <i class="fa fa-github">
+          {% if page.btn_text != false %}
+          <p>Github</p>
+          {% endif %}
+        </i>
+      </a>
+      {% endif %}
+      <!-- gitlab -->
+      {% if site.gitlab %}
+      <a class="footer_btn" href="https://gitlab.com/{{ site.gitlab }}">
+        <i class="fa fa-gitlab">
+          {% if page.btn_text != false %}
+          <p>Gitlab</p>
+          {% endif %}
+        </i>
+      </a>
+      {% endif %}
+      <!-- website -->
+      {% if site.website %}
+      <a class="footer_btn" href="{{ site.website }}">
+        <i class="fa fa-link">
+          {% if page.btn_text != false %}
+          <p>Website</p>
+          {% endif %}
+        </i>
+      </a>
+      {% endif %}
+      <!-- twitter -->
+      {% if site.twitter %}
+      <a class="footer_btn" href="https://twitter.com/{{ site.twitter }}">
+        <i class="fa fa-twitter">
+          {% if page.btn_text != false %}
+          <p>Twitter</p>
+          {% endif %}
+        </i>
+      </a>
+      {% endif %}
+      <!-- facebook -->
+      {% if site.facebook %}
+      <a class="footer_btn" href="https://www.facebook.com/{{ site.facebook }}">
+        <i class="fa fa-facebook">
+          {% if page.btn_text != false %}
+          <p>Facebook</p>
+          {% endif %}
+        </i>
+      </a>
+      {% endif %}
+      <!-- instagram -->
+      {% if site.instagram %}
+      <a class="footer_btn" href="https://instagram.com/{{ site.instagram }}">
+        <i class="fa fa-instagram">
+          {% if page.btn_text != false %}
+          <p>Instagram</p>
+          {% endif %}
+        </i>
+      </a>
+      {% endif %}
+      <!-- youtube -->
+      {% if site.youtube %}
+      <a
+        class="footer_btn"
+        href="https://www.youtube.com/user/{{ site.youtube }}"
+      >
+        <i class="fa fa-youtube">
+          {% if page.btn_text != false %}
+          <p>Youtube</p>
+          {% endif %}
+        </i>
+      </a>
+      {% endif %}
+      <!-- steam -->
+      {% if site.steam %}
+      <a
+        class="footer_btn"
+        href="https://steamcommunity.com/id/{{ site.steam }}"
+      >
+        <i class="fa fa-steam">
+          {% if page.btn_text != false %}
+          <p>Steam</p>
+          {% endif %}
+        </i>
+      </a>
+      {% endif %}
+      <!-- weibo -->
+      {% if site.weibo %}
+      <a class="footer_btn" href="https://weibo.com/u/{{ site.weibo }}">
+        <i class="fa fa-weibo">
+          {% if page.btn_text != false %}
+          <p>Weibo</p>
+          {% endif %}
+        </i>
+      </a>
+      {% endif %}
+    </ul>
+    <!-- copyright -->
+    <ul class="footer_copyright">
+      <li class="copyright">© 2018 - 2023</li>
+      {% if site.statement %}
+      <li>{{ site.statement }}</li>
+      {% endif %}
+    </ul>
+  </nav>
+</div>

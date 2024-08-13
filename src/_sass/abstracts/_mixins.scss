@@ -1,0 +1,31 @@
+@mixin thin_scrollbar {
+  &::-webkit-scrollbar {
+    width: 4.5px;
+    height: 4.5px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: $color-primary;
+  }
+}
+
+@mixin simple_link_style {
+  & {
+    text-decoration: none !important;
+  }
+  &:link {
+    font-style: normal !important ;
+    text-decoration: none !important;
+  }
+  &:hover {
+    text-decoration: none !important;
+    font-weight: inherit;
+    color: $color-secondary !important;
+    cursor: pointer;
+    text-shadow: 0 0 4px $color-secondary;
+  }  
+}
+
+@mixin fade_in {
+  -webkit-animation: fadeIn 0.60s;
+  animation: fadeIn 0.60s;  
+}

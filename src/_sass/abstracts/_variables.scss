@@ -1,0 +1,75 @@
+// normal colors
+$black:   #000000;
+$lighterblack: #181111;
+$red:     #cd0000;
+$green:   #00cd00;
+$lightgreen: #81ff81;
+$yellow:  #cdcd00;
+$blue:    #436fff;
+$magenta: #df4cdf;
+$cyan:    #4ef9ff;
+$white:   #e7e3e3;
+$orange:  #f6c113;
+$purple:  #993aff;
+
+
+// global variables
+$color-primary: $green;
+$color-secondary: $orange;
+$color-warning: $red;
+$color-bg: $lighterblack;
+$color-postbg: $black;
+$image-background: none;
+
+$article-text: $green;
+$article-blockquote: $white;
+$article-bold:  $orange;
+$article-link: $blue;
+$article-italic: $lightgreen;
+$article-keyword: $red;
+
+// font size
+$font-size-h1: 23px;
+$font-size-h2: 22px;
+$font-size-h3: 22px;
+$font-size-h4: 19.5px;
+$font-size-h5: 18.5px;
+$font-size-h6: 18px;
+$font-size-primary: 16px;
+$font-smaller: 90%;
+$font-bigger: 108%;
+$blk-duration: 1.2s;
+$blk-timing-function: cubic-bezier(0.98, -0.23, 0.65, 0.7);
+
+// layout reset
+$header-height: 37px;
+$header-btn-icon-size: 17px;
+$header-btn-text-size: $header-btn-icon-size * 0.95;
+$toc-position: $header-height + 1px;
+$footer-icon-size: 14px;
+$footer-text-size: $footer-icon-size * 0.9;
+$collection-list-header-size: 30px;
+$global-section-margin: 7px;
+
+// standard border
+$thick-border: 2.1px solid $color-primary;
+$secondary-border: 1.35px solid rgba($color-primary, 0.87);
+$medium-border: 0.95px solid rgba($color-primary, 0.83);
+$thin-border: 0.5px solid rgba($color-primary, 0.6);
+
+// syntax highlight
+$code-primary: $color-primary;
+$comment: $color-secondary;
+$keyword: #66d4ff;
+$type: rgb(195, 233, 25);
+$variable: #9648fa;
+$number: #4ef9ff;
+$string: #ad7f7f;
+$punctuation: #549ef3;
+$namespace: #8a076d;
+$class: rgb(230, 126, 29);
+$built-in: #be273b;
+$global: #52c96c;
+$error: $color-warning;
+$code-background: rgb(19, 16, 16);
+$error-background: #250f0f;

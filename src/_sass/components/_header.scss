@@ -1,0 +1,105 @@
+.header {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  height: auto;
+  z-index: 3;
+  border: $secondary-border;
+  border-bottom: $medium-border;
+  .vertical_center_table {
+    width: 100%;
+    height: $header-height; // the real height of header
+  }
+  tbody {
+    border: none;
+  }
+  td {
+    border: none;
+    padding: 0;
+    vertical-align: middle;
+  }
+  li {
+    width: auto;
+  }
+  .nav_bar {
+    text-align: left;
+    display: block;
+    list-style: none;
+    padding: 0px 12px;
+    word-wrap: none;
+    overflow: hidden;
+    white-space: nowrap;
+    ul {
+      padding: 0;
+      margin: 0;
+      .li_left {
+        list-style: none;
+        display: inline-block;
+        cursor: pointer;
+      }
+      .span_right {
+        float: right;
+        cursor: pointer;
+        max-width: 60%;
+      }
+    }
+    .site_title {
+      color: $color-primary;
+      font-size: $header-btn-text-size;
+      @include simple_link_style;
+    }
+    .site_owner {
+      color: $color-primary;
+      font-size: $header-btn-text-size;
+      @include simple_link_style;
+    }
+  }
+  .header_btn {
+    color: $color-primary;
+    margin: 0 0.06em 0 0.06em;
+    display: inline-block;
+    i {
+      @include simple_link_style;
+    }
+  }
+  .btn_text {
+    font-style: normal;
+    margin: 0;
+    display: inline-block;
+    text-transform: capitalize;
+    font-family: $font-serif;
+    font-size: $header-btn-text-size;
+  }
+  .btn_icon {
+    font-size: $header-btn-icon-size;
+  }
+  .access_token {
+    resize: none;
+    float: right;
+    width: 5.5em;
+    display: inline-flexbox;
+    margin: 0px 5px;
+  }
+}
+// screen auto-adjustment
+@media screen and (max-width: 800px) {
+  .page .header .nav_bar ul .header_btn .btn_text {
+    font-size: 0;
+  }  
+  .page .container .header {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    #mxmz_btn {
+      display: none;
+    }
+  }
+}
+@media screen and (max-width: 500px) {
+  .page .container .header .nav_bar ul .site_owner {
+    font-size: 0;
+  }  
+  .page .container .header .nav_bar ul .site_title {
+    font-size: 0%;
+  }
+}

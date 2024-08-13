@@ -1,0 +1,125 @@
+<div class="header">
+  <table class="vertical_center_table">
+    <tr>
+      <td>
+        <nav class="nav_bar">
+          <ul>
+            <!-- left header -->
+            <li class="li_left">
+              <!-- open collection tree -->
+              {% if page.collection_list != false %}
+              <a class="header_btn" onclick="open_collection_list()">
+                <i class="fa btn_icon fa-bars">
+                  {% if page.btn_text != false %}
+                  <p class="btn_text">Archives</p>
+                  {% endif %}
+                </i>
+              </a>
+              {% endif %}
+              <!-- home -->
+              {% if page.home_btn != false %}
+              <a class="header_btn" href="{{ site.url }}{{ site.baseurl }}">
+                <i class="fa btn_icon fa-home">
+                  {% if page.btn_text != false %}
+                  <p class="btn_text">Home</p>
+                  {% endif %}
+                </i>
+              </a>
+              {% endif %}
+              <!-- maximize -->
+              {% if page.maximize != false %}
+              <a class="header_btn" id="mxmz_btn" onclick="toggle_maximize()">
+                <i class="fa btn_icon fa-window-maximize">
+                  {% if page.btn_text != false %}
+                  <p class="btn_text" id="mxmz_text">Maximize</p>
+                  {% endif %}
+                </i>
+              </a>
+              {% endif %}
+              <!-- access token -->
+              {% if page.encrypted_text == true %}
+              <a class="header_btn" id="acs_btn" onclick="apply_token()">
+                <i class="fa btn_icon fa-key">
+                  {% if page.btn_text != false %}
+                  <p class="btn_text">Token</p>
+                  {% endif %}
+                </i>
+              </a>
+              <textarea
+                class="access_token"
+                cols="8"
+                id="acs_tkn"
+                rows="1"
+              ></textarea>
+              {% endif %}
+            </li>
+            <!-- right header -->
+            <span class="span_right">
+              {% if page.toc != false %}
+              <!-- scroll up -->
+              <a class="header_btn" onclick="scroll_percentage(-0.88)">
+                <i class="fa btn_icon fa-backward">
+                  {% if page.btn_text != false %}
+                  <p class="btn_text">Prev</p>
+                  {% endif %}
+                </i>
+              </a>
+              <!-- scroll down -->
+              <a class="header_btn" onclick="scroll_percentage(0.88)">
+                <i class="fa btn_icon fa-forward">
+                  {% if page.btn_text != false %}
+                  <p class="btn_text">Next</p>
+                  {% endif %}
+                </i>
+              </a>
+              <!-- popup table of content -->
+              <a class="header_btn popup_btn" onclick="toggle_toc()">
+                <i class="fa btn_icon fa-list">
+                  {% if page.btn_text != false %}
+                  <p class="btn_text">Content</p>
+                  {% endif %}
+                </i>
+              </a>
+              {% else %}
+              <a class="site_title" href="{{site.url}}{{site.baseurl}}"
+                >{{ site.title }}</a
+              >
+              {% if site.owner != false%}
+              <a class="site_owner"> - </a>
+              <a class="site_owner" href="https://github.com/{{site.github}}">
+                {{ site.owner }}</a
+              >
+              {% endif %} {% endif %}
+            </span>
+          </ul>
+        </nav>
+        <!-- <hr /> -->
+      </td>
+    </tr>
+  </table>
+</div>
+<!-- table of content -->
+{% if page.toc != false %}
+<div class="div_toc toc" id="popup_toc">
+  {% if page.toc_level %} {% assign toclv = page.toc_level %} {% elsif
+  site.toc_level %} {% assign toclv = site.toc_level %} {% else %} {% assign
+  toclv = 3 %} {% endif %}
+  <!-- generate toc -->
+  {% include toc.html html=content sanitize=true class="ul_toc" id="ul_toc"
+  h_min=2 h_max=toclv %}
+</div>
+{% endif %}
+<!-- toggle maximize -->
+{% if page.maximize != false %}
+<script>
+  var ctner_state = 0;
+  var ctner = document.getElementById("ctner");
+</script>
+{% endif %}
+<!-- encrypt and decrypt -->
+{% if page.encrypted_text == true %}
+<script
+  src="{{ site.url }}{{ site.baseurl }}/src/assets/js/sjcl.js"
+  async
+></script>
+{% endif %}

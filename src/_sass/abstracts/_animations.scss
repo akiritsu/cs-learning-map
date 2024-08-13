@@ -1,0 +1,74 @@
+// animations
+
+// fadein
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.blink_text {
+  @keyframes blktxt {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  @-webkit-keyframes blktxt {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  @-moz-keyframes blktxt {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  @-ms-keyframes blktxt {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  @-o-keyframes blktxt {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  .blktxt {
+    position: fixed;
+    display: inline;
+    word-break: break-all;
+    font-weight: bold;
+    color: $color-primary;
+    animation: blktxt $blk-duration $blk-timing-function infinite;
+    -webkit-animation: blktxt $blk-duration $blk-timing-function infinite;
+    -moz-animation: blktxt $blk-duration $blk-timing-function infinite;
+    -ms-animation: blktxt $blk-duration $blk-timing-function infinite;
+    -o-animation: blktxt $blk-duration $blk-timing-function infinite;
+  }
+}

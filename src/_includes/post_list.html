@@ -1,27 +1,28 @@
+<div class="post_list">
 {% if page.post_list == "date" %}
 <!-- list of articles: sort by date (by default) -->
-<!-- <h1 class="loa">计算机科学免费在线资源</h1> -->
+<h1 class="post_list_title">Post List - by Date</h1>
 <table>
     <thead>
         <tr>
-            <th> 标题 </th>
-            <th> 更新日期 </th>
+            <th> TITLE </th>
+            <th> DATE </th>
+            <th> CATEGORY </th>
         </tr>
     </thead>
     <tbody>
         {% for post in site.posts %}
-          {% if page.finished != false %}
         </tr>
-        <td class="td_title"><a href="{{post.url}}">{{post.title}}</a></td>
+        <td><a  class="td_title" href="{{site.url}}{{site.baseurl}}{{post.url}}">{{post.title}}</a></td>
         <td class="td_date">{{post.date | date: "%b %d, %y"}}</td>
+        <td class="td_category">{{post.category}}</td>
         </tr>
-        {% endif %}
         {% endfor %}
     </tbody>
 </table>
 {% elsif page.post_list == "category" %}
 <!-- list of articles: sorted by category-->
-<h1>Post List, sorted by Category</h1>
+<h1>Post List - by Category</h1>
 <table>
 {% for cate in site.categories %} 
 {% capture cate_name %}
@@ -38,7 +39,7 @@
     {% for post in cate[1] %}
     <tr>
       <td class="td_title">
-        <a href="{{ post.url }}">{{ post.title }}</a>
+        <a href="{{site.url}}{{site.baseurl}}{{post.url}}">{{ post.title }}</a>
       </td>
       <td class="td_date">{{ post.date | date: "%b %d, %y" }}</td>
     </tr>
@@ -47,3 +48,4 @@
 {% endfor %}
 </table>
 {% endif %}
+</div>

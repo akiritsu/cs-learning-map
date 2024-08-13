@@ -1,0 +1,203 @@
+// global base reset
+body {
+  line-height: 1.70;
+  font-size: $font-size-primary;
+  color: $color-primary;
+  font-family: $font-serif;
+}
+h1 {
+  font-size: $font-size-h1;
+  text-align: center !important;
+  font-weight: lighter;
+  margin: 1.8em 0 1.5em 0;
+}
+h2 {
+  font-size: $font-size-h2;
+  font-weight: lighter;
+  margin: 1.8em 0 0.8em 0;
+  border-bottom: $secondary-border;
+}
+h3 {
+  font-size: $font-size-h3;
+  font-weight: lighter;
+  margin: 1.9em 0 0.8em 0;
+  border-bottom: $thin-border;
+}
+h4 {
+  font-size: $font-size-h4;
+  font-weight: lighter;
+  margin: 1.5em 0 0.8em 0;
+}
+h5 {
+  font-size: $font-size-h5;
+  font-weight: lighter;
+  margin: 2.3em 0 0.6em 0;
+}
+h6 {
+  font-size: $font-size-h6;
+  font-weight: lighter;
+  margin: 2.4em 0 0.6em 0;
+}
+p {
+  margin: $global-section-margin 0px;
+  display: block;
+}
+strong {
+  font-weight: bold;
+  color: $article-bold;
+  // -webkit-text-stroke: 0.5px $color-primary;
+  // text-shadow: 0.35px 0.35px 0 $color-primary;
+}
+hr {
+  border: 0;
+  border-top: 1px solid rgba($color-primary, 0.6);
+  margin: 0 0 0 0;
+}
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+textarea {
+  margin: 0;
+  padding: 0;
+  border: $thin-border;
+  background-color: rgba($color-postbg, 0.7);
+  color: $color-warning;
+  font-size: 15px;
+}
+button {
+  border: $medium-border;
+  background-color: rgba($color-postbg, 0.7);
+  color: $color-primary;
+}
+// links
+a {
+  font-size: 95%;
+  color: $article-link;
+  text-decoration: none;
+  //text-decoration: underline solid $article-link;
+}
+a:hover {
+  font-size: 95%;
+  color: $orange;
+  font-weight: auto;
+  text-decoration: none;
+  cursor: pointer;
+}
+img {
+  width: auto;
+  max-width: 95%;
+  margin: 0 auto; // image center align
+  display: block; // image center align
+  background-color: whitesmoke;
+}
+ol {
+  padding: 0 0 0 1.42em;
+  margin: $global-section-margin 12px 12px 0px;
+  display: block;
+  list-style-type: decimal;
+}
+ul {
+  padding: 0 0 0 1.2em;
+  margin: $global-section-margin 12px 12px 0px;
+  list-style: disc;
+}
+blockquote {
+  margin: $global-section-margin 0em 0.55em 0em;
+  font-size: $font-smaller;
+  font-style: none;
+  line-height: 1.5;
+  color: $article-blockquote;
+}
+// footnote mark
+sup a{
+  font-size: 105%;
+  color: $article-blockquote;
+  text-decoration: none !important;
+}
+// code highlight
+pre {
+  border: $thin-border;
+  margin: 0.6em 0.1em;
+}
+
+em {
+  color: $article-italic
+}
+
+// table style
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 2px;
+  line-height: 1;
+  thead {
+    border-top: $secondary-border;
+    border-bottom: $thin-border;
+    th {
+      padding: 10px 10px;
+      font-size: $font-size-primary;
+    }
+  }
+  tbody {
+    td {  
+      padding: 8px 10px;
+      font-size: $font-smaller;
+    }
+    border-bottom: $thin-border;
+  }
+}
+code {
+  font-family: $font-monospace;
+}
+article {
+  a {
+    padding: 0 0.3em;
+  }
+  a:hover {
+    //font-weight: bold;
+    text-decoration: underline ;
+  }
+}
+// markdown style reset: keyword
+article .language-plaintext {
+  font-size: 100%;
+  font-weight: bold;
+  color: $article-keyword;
+  // -webkit-text-stroke: 0.5px $color-primary; // stroke text
+  // text-shadow: -0.4px -0.4px 0 rgb(233, 255, 135), 0.4px 0.4px 0 rgb(48, 253, 59),
+    // 0.4px 0.4px 0 rgb(95, 99, 65);
+}
+// markdown style reset: checkbox
+input[type="checkbox"] {
+  position: relative;
+  width: 13px;
+  height: 13px;
+  margin: 0px 10px 0px 3px;
+  text-align: center;
+  border: 1.5px solid $color-primary;
+  border-radius: 1px;
+}
+
+input[type="checkbox"]::before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(0, 0, 0);
+  border: 1.5px solid $color-primary;
+}
+
+input[type="checkbox"]:checked::before {
+  content: "\2714";
+  vertical-align: middle;
+  color: $color-primary;
+  font-size: 15px;
+  font-weight: bold;
+}

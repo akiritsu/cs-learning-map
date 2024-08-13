@@ -1,0 +1,41 @@
+.footer {
+  position: relative;
+  display: block;
+  text-align: center;
+  top: auto;
+  height: auto;
+  padding: 0;
+  margin: 25px 0 0 0;
+  .nav_bar {
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    display: block;
+    list-style: none;
+    text-align: center;
+    display: inline-block;
+    li {
+      list-style: none;
+      display: inline-block;
+      padding: 2px 12px;
+    }
+  }
+  .footer_owner_info {
+    font-size: $footer-icon-size;
+    margin: 0;
+    padding: 0;
+    p {
+      font-size: $footer-text-size;
+      margin: 0 0.5em 0 0.05em;
+      display: inline;
+      font-family: $font-serif;
+    }
+  }
+  .footer_copyright {
+    margin: 0;
+    font-size: 12px;
+  }
+  .footer_btn {
+    @include simple_link_style;
+  }
+}

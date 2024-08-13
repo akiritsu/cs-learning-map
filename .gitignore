@@ -1,4 +1,29 @@
-#-------------------
+# Jekyll generated files
+.jekyll-cache
+.jekyll-metadata
+.sass-cache
+_asset_bundler_cache
+_site
+
+# Ruby Gem
+*.gem
+.bundle
+Gemfile.lock
+**/vendor/bundle
+
+# Node.js and NPM
+node_modules
+npm-debug.log*
+package-lock.json
+codekit-config.json
+
+# OS junk
+._*
+.DS_Store
+.Spotlight-V100
+.Trashes
+Thumbs.db
+
 # Emacs
 *~
 *.elc
@@ -6,22 +31,17 @@
 *[#]
 .[#]*
 
+# Vim
+*~
+*.sw[p_]
 
-#-------------------
-# OS junk
-.DS_Store
-._*
-.Spotlight-V100
-.Trashes
-Thumbs.db
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
 
-#-------------------
-# site
-_site
-.sass-cache
-.jekyll-metadata
-Gemfile.lock
-.jekyll-metadata
-.vscode
+# IDEA
 .idea
-.DS_Store
+
+# VS Code
+
+.vscode

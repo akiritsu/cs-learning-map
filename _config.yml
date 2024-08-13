@@ -1,22 +1,70 @@
-## Settings
-title: 计算机科学自学地图
-owner: "DeerRIDER"
-url: ""
-baseurl: "/cs-learning-map"
-# baseurl: "/pRoJEct-NeGYa"
-permalink: /:title/
-description: ""
-markdown: kramdown
+# 1. Site Settings
+title               : /home/deerrider/Documents/repos/_config.yml
+owner               : "DeerRIDER"
+#url                 : "http://127.0.0.1:4000"
+baseurl            : "/cs-learning-map"
+permalink           : /:title/
+description         : "About
+(Try to be) a Comprehensive Computer Science Learning Map."
+markdown            : kramdown
+statement           : "Designed by DeerRIDER, All Rights Reserved"
+bgtext              : "01" # texts randomly displayed in background
+
+# 2. Collections
+collection_order    :
+  []
+collections:
+
+# 3. Comment settings（disqus.com）
+disqus_username     : akiritsu
+
+# 4. Default page configuration
+defaults:
+  -    
+    scope:
+      path          : ""  # an empty string here means all files in the project
+    values:
+      layout              : "post"      # which layout to use by default
+      publish             : true        # whether to show by default      
+      btn_text            : true        # whether show button text by default
+      collection_list     : true        # whether show archive button by default
+      home_btn            : true        # whether show home by default
+      maximize            : true        # whether show maximize button by default
+      encrypted_text      : false       # whether use encrytion function by default
+      toc                 : true        # whether show table of content by default
+      toc_level           : 3           # the toc depth by default
+      author              :             # author name by default
+      show_date           : false       # whether show date message by default
+      category            :             # category by default
+      post_list           : false       # whether show list of post by default      
+      comment             : true
+      footer              : ture       # whether show footer by default
+      highlight           : false
+
+# 5. Social Media Accounts
+email               : "akiritsu@outlook.com" 
+github              : "akiritsu/cs-learning-map" 
+
+# 6. Where things are
+source              : .
+destination         : ./_site
+collections_dir     : collections
+plugins_dir         : src/_plugins # takes an array of strings and loads plugins in that order
+layouts_dir         : src/_layouts
+data_dir            : src/_data
+includes_dir        : src/_includes
+sass:
+  sass_dir          : src/_sass
+
+# 7. Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+ # - jekyll-seo-tag
+  - jekyll-mermaid
+
+# 8. Others
+# Cross-Origin Resource Sharing header
 webrick:
   headers:
-    Access-Control-Allow-Origin: "*"
-## Global Variables
-email: "akiritsu@outlook.com"
-github: "akiritsu/cs-learning-map"
-# path to: css/, fonts/, img/ and js/
-assets_path: "/assets" # i.e. "/assets" 
-statement: "Designed by DeerRIDER, All Rights Reserved"
-# default max toc levels: 1 - 6 (h1 - h6)
-toc_level: 3
-# texts randomly displayed in background
-bgtext: "αβγδεζηθικλμνξοπρστυφχψω∷∫∮∝∞∧∨∑∏∪∩∈∵∴⊥‖∠⌒⊙≌∽√"
+   Access-Control-Allow-Origin: "*"
