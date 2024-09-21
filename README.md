@@ -1,6 +1,6 @@
-# （尝试成为）计算机科学自学地图
+# (尝试成为)计算机科学自学地图
 
-当前版本：给表妹写的 v1.2
+当前版本： v1.21
 
 ## 关于本文
 
@@ -52,7 +52,7 @@
 于是紧接而来的问题是，如何选取自己的第一门语言？其实这个问题无关紧要‵
 
 我遇到过很多偏执迂腐的人，他们在对计算机科学一无所知的情况下，不断重复着“刻板偏见”，无视那些真正有益的建议。
-   - 极致实用主义者会说，“编程语言只是工具”（错的），我就学 Python，别让我学乱七八糟的。
+   - 极致实用主义者会说，“编程语言只是工具”（错的），我就学一门 Python 就够了，别让我学乱七八糟的。
    - 老古板们会说，“越底层的语言越厉害啊”（错的），高手都用汇编和 C 语言。
    - 弄潮儿会说，“越新的语言肯定越先进”（错的），老掉牙的 Java、C 都过时了，就该学 Rust、GoLang、Swift。
 
@@ -138,8 +138,6 @@ Haskell是一种纯函数式编程语言，具有强大的类型系统和高级�
 **【科普】计算机科学地图** [#哔哩哔哩-中英字幕](https://www.bilibili.com/video/BV1WH4y1B7Af/) [#油管](https://www.youtube.com/watch?v=SzJ46YA_RaA)
 
 **【科普】两座塔的故事 Theory of Computation: A Tale of Two Towers** [#哔哩哔哩](https://www.bilibili.com/video/BV1z94y1T7LC) [#油管](https://youtu.be/ruOnPmI_40g)
-
-**【科普】代码美学 Code Aesthetic** [#哔哩哔哩](https://space.bilibili.com/1629390/channel/collectiondetail?sid=1068921)
 
 **【科普】硬件茶谈 带你认识 CPU & 硬核科普** [#哔哩哔哩](https://space.bilibili.com/14871346/channel/collectiondetail?sid=153373) [#哔哩哔哩](https://space.bilibili.com/14871346/channel/collectiondetail?sid=550815)
 
@@ -440,17 +438,7 @@ Haskell是一种纯函数式编程语言，具有强大的类型系统和高级�
 **【书籍】Essentials of Programming Languages** [#豆瓣](https://book.douban.com/subject/3136252/)
   - 这教材提供对编程语言基本概念的深刻理解。该方法既是分析性的又是实践性的。文本使用在 Scheme 中编写的解释器，以清晰且可直接执行的方式表达许多基本语言元素的语义。它还审查了一些重要的程序分析。大量的练习探讨了许多设计和实现的选择。
 
-### 并行计算 Parallel Computing
-
-并行计算是一种在多个处理单元上同时执行计算任务的计算模型，旨在提高计算速度和处理能力。本课程主要讲授使用并行计算的多核处理器和多处理器系统、SIMD（单指令多数据）和MIMD（多指令多数据）架构，并行编程模型、并行算法以及并行性能分析和优化、任务调度和负载平衡、并行编程语言和工具。
-
-**【课程】CMU 15-418: Parallel Computer Achitecture and Programming** [#哔哩哔哩-无字幕](https://www.bilibili.com/video/BV1SM4y1j7XL) [Video](http://15418.courses.cs.cmu.edu/spring2016/lectures) [#课程主页](http://15418.courses.cs.cmu.edu/spring2016/)
-
-**【书籍】并行程序设计原理 Principles of Parallel Programming** [#豆瓣](https://book.douban.com/subject/3880304/)
-  - 涉及现代并行硬件和软件技术，包括多核体系结构及其并行程序设计技术，侧重论述并行程序设计的原理，并论述了并行程序设计中一些深层次问题，如可扩展性、可移植性以及并行程序设计应遵循的方法学等。
-
-**【书籍】Parallel and Concurrent Programming in Haskell: Techniques for Multicore and Multithreaded Programming** [#豆瓣](https://book.douban.com/subject/24294415/)
-  - 这本书需要有足够的 Haskell 编程基础，涵盖了Haskell多样的并发和并行编程API的广泛选择。它分为两个部分。第一部分关于并行编程，涵盖了使用多个处理器加速CPU密集型计算的技术，包括在惯用的Haskell和基于数值数组的算法中使用并行ism的方法，以及在GPU上运行计算的方法。第二部分关于并发编程，介绍了使用多个线程的技术，包括重叠多个I/O操作，构建并发网络服务器以及在多台机器上进行分布式编程的方法。
+**【书籍】Programming Language Foundations in Agda** [#在线英文](https://plfa.inf.ed.ac.uk/) [#在线中文](https://agda-zh.github.io/PLFA-zh/)
 
 ### 编译原理 Compiler Theory
 
@@ -481,6 +469,18 @@ Haskell是一种纯函数式编程语言，具有强大的类型系统和高级�
 
 **【书籍】Language Implementation Patterns: Create Your Own Domain-Specific and General Programming Languages** [#豆瓣](https://book.douban.com/subject/10482195/)
   - 本书注重实践，以 Java 语言描述，帮助读者构建自己的语言应用。这里的语言应用并非特指用编译器或解释器实现编程语言，而是泛指任何处理、分析、翻译输入文件的程序，比如配置文件读取器、数据读取器、模型驱动的代码生成器、源码到源码的翻译器、源码分析工具、解释器，以及诸如此类的工具。为此，作者举例讲解已有语言应用的工作机制，拆解、归纳出31种易于理解且常用的设计模式（每种都包括通用数据结构、算法、策略）。
+
+### 并行计算 Parallel Computing
+
+并行计算是一种在多个处理单元上同时执行计算任务的计算模型，旨在提高计算速度和处理能力。本课程主要讲授使用并行计算的多核处理器和多处理器系统、SIMD（单指令多数据）和MIMD（多指令多数据）架构，并行编程模型、并行算法以及并行性能分析和优化、任务调度和负载平衡、并行编程语言和工具。
+
+**【课程】CMU 15-418: Parallel Computer Achitecture and Programming** [#哔哩哔哩-无字幕](https://www.bilibili.com/video/BV1SM4y1j7XL) [Video](http://15418.courses.cs.cmu.edu/spring2016/lectures) [#课程主页](http://15418.courses.cs.cmu.edu/spring2016/)
+
+**【书籍】并行程序设计原理 Principles of Parallel Programming** [#豆瓣](https://book.douban.com/subject/3880304/)
+  - 涉及现代并行硬件和软件技术，包括多核体系结构及其并行程序设计技术，侧重论述并行程序设计的原理，并论述了并行程序设计中一些深层次问题，如可扩展性、可移植性以及并行程序设计应遵循的方法学等。
+
+**【书籍】Parallel and Concurrent Programming in Haskell: Techniques for Multicore and Multithreaded Programming** [#豆瓣](https://book.douban.com/subject/24294415/)
+  - 这本书需要有足够的 Haskell 编程基础，涵盖了Haskell多样的并发和并行编程API的广泛选择。它分为两个部分。第一部分关于并行编程，涵盖了使用多个处理器加速CPU密集型计算的技术，包括在惯用的Haskell和基于数值数组的算法中使用并行ism的方法，以及在GPU上运行计算的方法。第二部分关于并发编程，介绍了使用多个线程的技术，包括重叠多个I/O操作，构建并发网络服务器以及在多台机器上进行分布式编程的方法。
 
 ### 高级算法 Advanced Algorithms
 
@@ -759,6 +759,12 @@ Scala 是一种多范式的编程语言（支持`面向对象`和`函数式编�
 **【书籍】An Introduction to Modern Mathematical Computing: with Maple** [#豆瓣](https://book.douban.com/subject/10160900/)
   - 三十年前，与应用数值计算相比，数学计算很难进行，因此使用相对较少。有三个因素改变了这种情况：个人计算机的出现；光纤的发现以及现代互联网的发展；以及Maple、Mathematica和Matlab等三个数学工具的建立。我们打算说服人们，Maple等类似工具值得了解，只要一个人希望成为数学家、数学教育工作者、计算机科学家、工程师或科学家，或者任何希望/需要更好地使用数学的人。我们还希望解释如何在学习更好地证明事物的同时成为一名实验数学家。为了实现这一目标，我们的材料分为三个主要章节，然后是一个附录。这些章节涵盖了初等数论、一元和多元微积分、初等线性代数以及可视化和交互式几何计算。
 
+### 凸优化 Convex Optimization
+
+凸优化是数学和计算机科学中一个重要的领域，主要研究凸函数的最优化问题。凸函数是一类具有良好性质的数学函数，其图形上的任意两点之间的线段位于或者在函数的下方。凸函数在许多领域中都具有重要的应用，因此对凸优化的研究也变得非常重要。
+
+**【课程】Stanford EE364A: Convex Optimization** [#哔哩哔哩-中英字幕](https://www.bilibili.com/video/BV1aD4y1Q7aW/) [#课程主页](http://stanford.edu/class/ee364a/index.html) [配套教材](https://stanford.edu/~boyd/cvxbook/)
+
 ## 人工智能相关
 
 ### 人工智能 Artificial Intelligence
@@ -1036,11 +1042,7 @@ Linux 应用开发的主流技术（截至 2023）：
 
 **【课程】MIT 6.003: Signals And Systems** [#哔哩哔哩-中英字幕](https://www.bilibili.com/video/BV1A7411i7Ku/) [哔哩哔哩-奥本海默亲讲](https://www.bilibili.com/video/BV1CZ4y1j7hs/) [#课程主页](https://ocw.mit.edu/courses/6-003-signals-and-systems-fall-2011/resources/lecture-1-signals-and-systems/) 
 
-### 凸优化 Convex Optimization
 
-凸优化是数学和计算机科学中一个重要的领域，主要研究凸函数的最优化问题。凸函数是一类具有良好性质的数学函数，其图形上的任意两点之间的线段位于或者在函数的下方。凸函数在许多领域中都具有重要的应用，因此对凸优化的研究也变得非常重要。
-
-**【课程】Stanford EE364A: Convex Optimization** [#哔哩哔哩-中英字幕](https://www.bilibili.com/video/BV1aD4y1Q7aW/) [#课程主页](http://stanford.edu/class/ee364a/index.html) [配套教材](https://stanford.edu/~boyd/cvxbook/)
 
 ### 离散优化 Discrete Optimization
 
