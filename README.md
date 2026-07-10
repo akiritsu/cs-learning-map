@@ -1,8 +1,8 @@
-# CS Learning Atlas / 计算机科学学习图谱
+# CS Learning Atlas / 计算机科学学习指南
 
-A bilingual learning atlas for computer science. 
+A bilingual learning guide for computer science. 
 
-这是一份双语计算机科学学习图谱。
+这是一份双语计算机科学学习指南。
 
 - Full index / 全站索引: [pages/index.md](pages/index.md)
 
@@ -14,7 +14,7 @@ Start with the introduction if you are deciding whether this roadmap is useful f
 
 ## Chapter 1 / 第一章：Better to Run than Curse the Road / 与其感慨路难行，不如马上出发
 
-Start here if you are wondering whether this roadmap is for you. These questions handle the ordinary anxieties before study begins: what background is enough, how long the road may take, how to use AI without letting it replace your own thinking, and how to read the rest of the atlas without treating it as a checklist.
+Start here if you are wondering whether this roadmap is for you. These questions handle the ordinary anxieties before study begins: what background is enough, how long the road may take, how to use AI without letting it replace your own thinking, and how to read the rest of the guide without treating it as a checklist.
 
 如果你还在犹豫该不该开始，先读这一章。这里回答的不是技术细节，而是学习前最常见的顾虑：背景够不够、要花多久、这份指南怎么用、AI 能不能帮忙，以及怎样把后面的章节当作路线图而不是压力清单。
 
@@ -156,11 +156,11 @@ Use this final chapter to widen the view after you have some footing. It shows w
 | 9.8 | [CS and Art and Design / 计算机科学与艺术设计](collections/_interdisciplinary/9.8.cs-and-art-and-design-generativity-aesthetics-and-computation.md) | Cross / 跨界 |
 | 9.9 | [CS and Philosophy / 计算机科学与哲学](collections/_interdisciplinary/9.9.cs-and-philosophy-foundations-mind-and-ethics.md) | Cross / 跨界 |
 
-## Appendix / 附录：Career Field Guides / 职业领域导览
+## Appendix / 附录：Career Field Guides and Reference / 职业领域导览与参考
 
-These appendix essays are career-field guides. They are not prerequisites for the main roadmap; use them when you want to compare directions, understand industry roles, or connect the core chapters to concrete jobs.
+These appendix essays are career-field guides and reference materials. They are not prerequisites for the main roadmap; use them when you want to compare directions, understand industry roles, connect core chapters to concrete jobs, or stabilize terminology across the guide.
 
-这些附录是职业领域导览，不是主线学习的前置要求。适合在比较方向、理解岗位分工，或把主线章节和具体职业连接起来时阅读。
+这些附录是职业领域导览和参考材料，不是主线学习的前置要求。适合在比较方向、理解岗位分工、把主线章节和具体职业连接起来，或统一全书术语时阅读。
 
 | No. | Field / 领域 | Type / 定位 |
 |---|---|---|
@@ -182,23 +182,11 @@ These appendix essays are career-field guides. They are not prerequisites for th
 | A.16 | [Computer Graphics and Rendering / 计算机图形学与渲染](collections/_appendix/a.computer-graphics-and-rendering.md) | Field / 领域 |
 | A.17 | [Robotics and Autonomous Systems / 机器人与自主系统](collections/_appendix/a.robotics-and-autonomous-systems.md) | Field / 领域 |
 | A.18 | [Programming Languages and Developer Tools / 编程语言与开发者工具](collections/_appendix/a.programming-languages-and-developer-tools.md) | Field / 领域 |
-
-## Local Development / 本地运行
-
-```bash
-bundle install
-bundle exec jekyll serve
-```
-
-Then open the local server URL printed by Jekyll. For a production build:
-
-```bash
-bundle exec jekyll build
-```
-
-运行后打开 Jekyll 输出的本地地址即可预览。生产构建使用 `bundle exec jekyll build`。
+| A.19 | [Terminology Glossary / 术语对照与定义](collections/_appendix/a.terminology-glossary.md) | Reference / 参考 |
 
 ## Content Status / 内容状态
+
+Version: v1-2026-7-11
 
 This is a first edition before proofreading. Much of the guide was reconstructed with AI assistance from the original course structure, conception, and selected resources.
 

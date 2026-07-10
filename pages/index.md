@@ -12,10 +12,9 @@ permalink: /
 
 # English
 
-
 ## Chapter 1 — Better to Run than Curse the Road
 
-Start here if you are wondering whether this roadmap is for you. These questions handle the ordinary anxieties before study begins: what background is enough, how long the road may take, how to use AI without letting it replace your own thinking, and how to read the rest of the atlas without treating it as a checklist.
+Start here if you are wondering whether this roadmap is for you. These questions handle the ordinary anxieties before study begins: what background is enough, how long the road may take, how to use AI without letting it replace your own thinking, and how to read the rest of the guide without treating it as a checklist.
 
 * [Can I learn computer science?]({{ '/introduction/1.1.qa/#q1' | relative_url }})
 * [What background knowledge do I need?]({{ '/introduction/1.1.qa/#q3' | relative_url }})
@@ -152,9 +151,9 @@ Use this final chapter to widen the view after you have some footing. It shows w
 | 9.8 | [CS and Art and Design: Generativity, Aesthetics, and Computation]({{ '/interdisciplinary/9.8.cs-and-art-and-design-generativity-aesthetics-and-computation/' | relative_url }}) | Cross |
 | 9.9 | [CS and Philosophy: Foundations, Mind, and Ethics]({{ '/interdisciplinary/9.9.cs-and-philosophy-foundations-mind-and-ethics/' | relative_url }}) | Cross |
 
-## Appendix — Career Field Guides
+## Appendix — Career Field Guides and Reference
 
-These appendix essays are career-field guides rather than required roadmap chapters. Use them to compare directions, understand industry roles, and connect core CS topics to concrete jobs.
+These appendix essays are career-field guides and reference materials rather than required roadmap chapters. Use them to compare directions, understand industry roles, connect core CS topics to concrete jobs, and stabilize terminology across the guide.
 
 | No. | Field | Type |
 |---|---|---|
@@ -176,9 +175,9 @@ These appendix essays are career-field guides rather than required roadmap chapt
 | A.16 | [Computer Graphics and Rendering]({{ '/appendix/a.computer-graphics-and-rendering/' | relative_url }}) | Field |
 | A.17 | [Robotics and Autonomous Systems]({{ '/appendix/a.robotics-and-autonomous-systems/' | relative_url }}) | Field |
 | A.18 | [Programming Languages and Developer Tools]({{ '/appendix/a.programming-languages-and-developer-tools/' | relative_url }}) | Field |
+| A.19 | [Terminology Glossary]({{ '/appendix/a.terminology-glossary/' | relative_url }}) | Reference |
 
 # 中文
-
 
 ## 第一章 —— 与其感慨路难行，不如马上出发
 
@@ -319,9 +318,9 @@ These appendix essays are career-field guides rather than required roadmap chapt
 | 9.8 | [计算机科学与艺术设计：生成性、美学与计算]({{ '/interdisciplinary/9.8.cs-and-art-and-design-generativity-aesthetics-and-computation/' | relative_url }}) | 跨界 |
 | 9.9 | [计算机科学与哲学：基础、心智与伦理]({{ '/interdisciplinary/9.9.cs-and-philosophy-foundations-mind-and-ethics/' | relative_url }}) | 跨界 |
 
-## 附录 —— 职业领域导览
+## 附录 —— 职业领域导览与参考
 
-这些附录是职业领域导览，不是主线学习章节。适合用来比较方向、理解行业岗位，并把计算机科学核心主题连接到具体工作。
+这些附录是职业领域导览和参考材料，不是主线学习章节。适合用来比较方向、理解行业岗位、把计算机科学核心主题连接到具体工作，并统一全书术语。
 
 | 序号 | 领域 | 定位 |
 |---|---|---|
@@ -343,4 +342,4 @@ These appendix essays are career-field guides rather than required roadmap chapt
 | A.16 | [计算机图形学与渲染]({{ '/appendix/a.computer-graphics-and-rendering/' | relative_url }}) | 领域 |
 | A.17 | [机器人与自主系统]({{ '/appendix/a.robotics-and-autonomous-systems/' | relative_url }}) | 领域 |
 | A.18 | [编程语言与开发者工具]({{ '/appendix/a.programming-languages-and-developer-tools/' | relative_url }}) | 领域 |
-
+| A.19 | [术语对照与定义]({{ '/appendix/a.terminology-glossary/' | relative_url }}) | 参考 |
